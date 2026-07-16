@@ -1,0 +1,9 @@
+.cursor
+.DS_Store
+Thumbs.db
+*.log
+scripts/
+docs/
+data/
+page3_words.txt
+README.md

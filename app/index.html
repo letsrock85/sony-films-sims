@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Filmbook</title>
+<meta name="description" content="A quiet field companion for Sony film simulation recipes by Veres Deni Alex.">
+<meta name="theme-color" content="#f4f4f0">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="stylesheet" href="styles.css?v=9">
+</head>
+<body>
+<a class="skip" href="#view">Skip to content</a>
+<div class="app">
+  <header class="bar">
+    <a class="brand" href="#/">Filmbook</a>
+    <nav class="tabs" id="tabs">
+      <a href="#/" data-tab="recipes">Films</a>
+      <a href="#/chart" data-tab="chart">Map</a>
+      <a href="#/guides" data-tab="guides">Guides</a>
+      <a href="#/fav" data-tab="fav">Saved</a>
+    </nav>
+  </header>
+  <main id="view" class="stage" aria-live="polite"></main>
+</div>
+<script src="app.js?v=9"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
+}
+</script>
+</body>
+</html>
