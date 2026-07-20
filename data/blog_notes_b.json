@@ -1,0 +1,571 @@
+{
+  "recipes": [
+    {
+      "name": "CineChrome",
+      "film": "Author original — teal-orange cinema look with deep blues and high dynamic range",
+      "bestFor": ["street", "travel", "portrait", "landscape", "everyday"],
+      "light": ["any"],
+      "mood": ["cinematic", "vivid", "dreamy"],
+      "tip": "Sits between Cine1 and S-Log — strong in low light with high dynamic range, so it holds up at night too.",
+      "sourceUrl": "https://www.veresdenialex.com/post/freshly-baked-series-the-cinechrome-sony-film-simulation-recipe"
+    },
+    {
+      "name": "Pro Color",
+      "film": "Author original — red-cyan harmony leaning yellow, super soft tones, high saturation",
+      "bestFor": ["portrait", "everyday"],
+      "light": ["any"],
+      "mood": ["vivid", "soft", "dreamy"],
+      "tip": "The author pairs it with a diffusion filter for its artistic, soft look.",
+      "sourceUrl": "https://www.veresdenialex.com/post/pro-color-sony-picture-profiles"
+    },
+    {
+      "name": "CineStill 50D",
+      "film": "Repackaged Kodak Vision3 50D cine film — fine grain, pastel daylight colors, halation",
+      "bestFor": ["street", "travel", "portrait", "everyday", "landscape"],
+      "light": ["sunny"],
+      "mood": ["warm", "nostalgic", "cinematic", "soft"],
+      "tip": "A daylight-balanced recipe that shines on sunny days; add a diffusion filter for extra punch.",
+      "sourceUrl": "https://www.veresdenialex.com/post/kodak-cinestill-50d-recipe-in-italy"
+    },
+    {
+      "name": "CineStill BwXX (Cinestill X)",
+      "film": "CineStill BwXX (Kodak Double-X) — classic cinema B&W with deep blacks and drama",
+      "bestFor": ["street", "documentary", "portrait", "night"],
+      "light": ["any"],
+      "mood": ["moody", "punchy", "cinematic"],
+      "tip": "Keeps its deep tonal range even when overexposed; formerly named 'Cinestill X', now 'Cinestill X - BwXX'.",
+      "sourceUrl": "https://www.veresdenialex.com/post/kodak-cinestill-bwxx-film-simulation-for-sony-cameras-custom-sony-picture-profiles"
+    },
+    {
+      "name": "Kodak T-Max 100",
+      "film": "Kodak's fine-grain B&W, prized for sharpness and smooth, modern tonality",
+      "bestFor": ["street", "everyday", "documentary", "landscape"],
+      "light": ["any"],
+      "mood": ["moody", "muted", "nostalgic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/freshly-baked-series-clearing-my-mind-with-the-t-max-100"
+    },
+    {
+      "name": "Kodak Tri-X 400",
+      "film": "Legendary Kodak B&W press film — at box speed a soft, low-contrast 'muddy' look",
+      "bestFor": ["portrait", "everyday"],
+      "light": ["any"],
+      "mood": ["soft", "muted", "nostalgic"],
+      "tip": "Expose carefully — underexposed it turns muddy; best for lo-fi portraits and casual events.",
+      "sourceUrl": "https://www.veresdenialex.com/post/freshly-baked-series-kodak-tri-x-400-sony-film-simulation-recipe"
+    },
+    {
+      "name": "Kodak Tri-X 1600",
+      "film": "Tri-X pushed to 1600 — the gritty, contrasty street look most people associate with it",
+      "bestFor": ["street", "documentary", "everyday", "night"],
+      "light": ["any"],
+      "mood": ["punchy", "moody", "nostalgic"],
+      "tip": "Raise or lower ISO to dial grain to taste, and turn off noise reduction to keep the gritty texture.",
+      "sourceUrl": "https://www.veresdenialex.com/post/freshly-baked-series-kodak-tri-x-400-sony-film-simulation-recipe"
+    },
+    {
+      "name": "X-Tarr",
+      "film": "Author original — the deepest, crunchiest B&W: ultra-deep blacks, bold contrast",
+      "bestFor": ["street", "landscape", "documentary", "portrait"],
+      "light": ["any"],
+      "mood": ["moody", "punchy", "cinematic"],
+      "tip": "Embrace the crushed blacks — it suits shots where the subject is the story; skip it if you want soft, airy tones.",
+      "sourceUrl": "https://www.veresdenialex.com/post/x-tarr-the-deepest-black-n-white-film-simulation-you-ll-find"
+    },
+    {
+      "name": "Chroma Fade",
+      "film": "Author original — heavily compressed faded B&W, like dusty prints found in an attic",
+      "bestFor": ["everyday", "street", "documentary"],
+      "light": ["any"],
+      "mood": ["nostalgic", "muted", "soft", "moody"],
+      "tip": "Highlights max out around 75% with faded shadows — lean into it for soft, aged, melancholic scenes.",
+      "sourceUrl": "https://www.veresdenialex.com/post/days-long-forgotten-chroma-fade-sony-film-simulation"
+    },
+    {
+      "name": "Agfa CT Precisa 100",
+      "film": "Discontinued Agfa color slide film — grain-free, punchy, with vivid deep blues",
+      "bestFor": ["everyday", "street", "night", "travel"],
+      "light": ["any"],
+      "mood": ["vivid", "punchy", "cool", "dreamy"],
+      "tip": "Very forgiving in mixed light — the author never changed temperature between scenes; a diffusion filter softens highlights.",
+      "sourceUrl": "https://www.veresdenialex.com/post/freshly-baked-series-moments-with-agfa-precisa"
+    },
+    {
+      "name": "Zetra 100",
+      "film": "Author original — amber-blue harmony, buttery soft contrast, true to life with character",
+      "bestFor": ["portrait", "landscape", "street", "everyday"],
+      "light": ["any"],
+      "mood": ["nostalgic", "soft", "clean"],
+      "tip": "Color shifts go unnoticed in neutral scenes — it shines in vibrant, colorful landscapes.",
+      "sourceUrl": "https://www.veresdenialex.com/post/zetra-100-film-simulation"
+    },
+    {
+      "name": "Rose Spectra",
+      "film": "Author original — creamy tones with a delicate rose cast that flatters skin",
+      "bestFor": ["portrait", "travel", "everyday", "landscape"],
+      "light": ["golden-hour", "overcast", "indoor"],
+      "mood": ["warm", "soft", "dreamy", "nostalgic"],
+      "tip": "Too subtle for lovers of loud color and deep contrast — pick it when you want warmth and quiet emotion.",
+      "sourceUrl": "https://www.veresdenialex.com/post/rose-spectra-a-perfect-film-simulation-for-portraits-and-travel"
+    },
+    {
+      "name": "Asteroid City (Kodak Vision 200T)",
+      "film": "Kodak Vision3 200T cine film as graded in Wes Anderson's Asteroid City — warm pastel",
+      "bestFor": ["travel", "landscape", "portrait", "street", "nature"],
+      "light": ["any"],
+      "mood": ["dreamy", "warm", "cinematic", "soft"],
+      "tip": "Overexpose V1 by +1 to +1.7 stops for pastel colors; V2 has more contrast and can be shot at 0 to +1.",
+      "sourceUrl": "https://www.veresdenialex.com/post/asteroid-city-look-italy"
+    },
+    {
+      "name": "Ayon 200",
+      "film": "Author original — bold monochromatic yellow, sun-baked amber like Chungking Express",
+      "bestFor": ["street", "travel", "architecture", "portrait", "product"],
+      "light": ["sunny"],
+      "mood": ["warm", "vivid", "punchy", "cinematic"],
+      "tip": "Turns skies green and deepens reds — use it to make ordinary scenes feel sun-drenched and dramatic.",
+      "sourceUrl": "https://www.veresdenialex.com/post/ayon-200-a-yellow-film-recipe"
+    },
+    {
+      "name": "Kodak Portra 800",
+      "film": "High-speed Portra — buttery soft contrast, famous for flattering natural skin tones",
+      "bestFor": ["portrait", "everyday", "travel", "street"],
+      "light": ["any"],
+      "mood": ["soft", "warm", "clean"],
+      "tip": "Overexpose by one stop for the bright, vibrant Portra look; minimal editing needed beyond contrast.",
+      "sourceUrl": "https://www.veresdenialex.com/post/kodak-portra-800-vs-kodak-vision-200t-vs-ayon-200-film-simulation-comparison"
+    },
+    {
+      "name": "Phoenix Harman 200",
+      "film": "Harman/Ilford's first color film (2023) — grainy, ultra-contrasty, vibrant and warm",
+      "bestFor": ["street", "portrait", "landscape", "travel"],
+      "light": ["any"],
+      "mood": ["warm", "punchy", "vivid", "moody"],
+      "tip": "Shadows and highlights clip hard and are tough to recover — skip it if you like re-grading colors in post.",
+      "sourceUrl": "https://www.veresdenialex.com/post/phoenix-harman-200-film-simulation-for-sony-cameras-freshly-baked-series"
+    },
+    {
+      "name": "Kodak Gold V1",
+      "film": "Kodak's beloved consumer film — warm golden hues and easy, nostalgic charm",
+      "bestFor": ["everyday", "portrait", "travel", "street"],
+      "light": ["golden-hour", "sunny"],
+      "mood": ["warm", "nostalgic", "soft"],
+      "tip": "The community's most beloved recipe and a great starter — it shines brightest in golden-hour light.",
+      "sourceUrl": "https://www.veresdenialex.com/post/phoenix-harman-vs-kodak-gold-v1-vs-kodachrome-v2-summer-film-simulations"
+    },
+    {
+      "name": "Kodak Gold V2",
+      "film": "Twist on classic Gold — warmer, more vibrant, with a subtle teal shift in skies",
+      "bestFor": ["everyday", "portrait", "travel"],
+      "light": ["sunny", "golden-hour"],
+      "mood": ["warm", "vivid", "nostalgic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Kodachrome V1",
+      "film": "Iconic Kodachrome slide film — deep, fairly accurate colors with a slightly cool lean",
+      "bestFor": ["landscape", "nature", "street", "travel"],
+      "light": ["sunny"],
+      "mood": ["vivid", "punchy", "cool"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Kodachrome V2",
+      "film": "1950s medium-format Kodachrome — golden skin tones and deep velvety blues",
+      "bestFor": ["portrait", "travel", "landscape", "everyday"],
+      "light": ["sunny", "golden-hour"],
+      "mood": ["warm", "nostalgic", "vivid"],
+      "tip": "Built on a complementary blue-amber harmony — a go-to when you want golden skin tones.",
+      "sourceUrl": "https://www.veresdenialex.com/post/phoenix-harman-vs-kodak-gold-v1-vs-kodachrome-v2-summer-film-simulations"
+    },
+    {
+      "name": "Kodachrome V3",
+      "film": "Warm 1950s Kodachrome take — slightly desaturated, dusty cyan skies, teal-amber harmony",
+      "bestFor": ["portrait", "travel", "street"],
+      "light": ["sunny"],
+      "mood": ["warm", "muted", "nostalgic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Estra 500",
+      "film": "Author original — desaturated pastel look with a gentle pink cast, dreamy and soft",
+      "bestFor": ["portrait", "everyday"],
+      "light": ["golden-hour", "overcast", "indoor"],
+      "mood": ["soft", "dreamy", "muted", "nostalgic"],
+      "tip": "Plays nicely with soft backlight or overcast skies — gentle highlights without harsh contrast; great for weddings.",
+      "sourceUrl": "https://www.veresdenialex.com/post/estra-500-film-recipe-perfecting-the-subtle-dreamy-look"
+    },
+    {
+      "name": "Magic Spice",
+      "film": "Author original — true-to-life colors with a hint of magic; born on an autumn hike",
+      "bestFor": ["portrait", "landscape", "travel", "everyday"],
+      "light": ["any"],
+      "mood": ["warm", "soft", "dreamy", "clean"],
+      "tip": "Skin leans slightly desaturated toward red and skies go violet-blue — flattering portraits without editing.",
+      "sourceUrl": "https://www.veresdenialex.com/post/magic-spice-film-simulation-a-great-all-rounder-overall-versatile-and-great-recipe-for-portraits"
+    },
+    {
+      "name": "Amarelo 30D",
+      "film": "Author original — Super-8 'Show Me How' vibe: amber-yellow skin, rich teal skies",
+      "bestFor": ["portrait", "street", "travel"],
+      "light": ["golden-hour", "sunny"],
+      "mood": ["warm", "vivid", "cinematic", "nostalgic"],
+      "tip": "A love-it-or-hate-it look — best in natural light; golden hour makes the sun-kissed skin glow even more.",
+      "sourceUrl": "https://www.veresdenialex.com/post/amarelo-30d-film-recipe-on-sony-a6700-freshly-baked-series"
+    },
+    {
+      "name": "Vektro 100",
+      "film": "Author original — high contrast, slightly desaturated, blue-amber street look",
+      "bestFor": ["street", "landscape", "documentary", "portrait", "architecture"],
+      "light": ["any"],
+      "mood": ["punchy", "moody", "muted"],
+      "tip": "Made for bold, iconic images — try it for portraits or fashion too if you like an edgier look.",
+      "sourceUrl": "https://www.veresdenialex.com/post/vektro-100-vs-magic-spice-vs-amarelo-30d"
+    },
+    {
+      "name": "Oktar",
+      "film": "Author original — crunchy tonality and cool, rich colors built for landscapes",
+      "bestFor": ["landscape", "nature", "street"],
+      "light": ["any"],
+      "mood": ["cool", "punchy", "moody", "vivid"],
+      "tip": "Don't box it into nature shots — the author encourages using it on your own terms.",
+      "sourceUrl": "https://www.veresdenialex.com/post/nature-awaits-oktar-sony-film-simulation-recipe"
+    },
+    {
+      "name": "Solara 100",
+      "film": "Author original — sun-kissed golden warmth, faded shadows, dreamy summer glow",
+      "bestFor": ["portrait", "travel", "landscape", "everyday", "night"],
+      "light": ["sunny", "golden-hour", "night"],
+      "mood": ["warm", "dreamy", "nostalgic", "soft"],
+      "tip": "Underexpose for moody magenta skies, overexpose for soft teal skies and pinkish skin tones.",
+      "sourceUrl": "https://www.veresdenialex.com/post/solara-100-a-sunny-addition-freshly-baked-series"
+    },
+    {
+      "name": "Kodak Pro Image 100",
+      "film": "Kodak's heat-resistant pro negative for tropical markets — golden skin, teal skies",
+      "bestFor": ["travel", "everyday", "portrait"],
+      "light": ["sunny"],
+      "mood": ["warm", "cinematic", "soft", "clean"],
+      "tip": "Shines in sunny, daylight-rich scenes; in mixed light expect to make small manual tweaks.",
+      "sourceUrl": "https://www.veresdenialex.com/post/kodak-pro-image-100-film-simulation-recipe-for-sony-a6700"
+    },
+    {
+      "name": "Orthochromatic",
+      "film": "1880s-style red-blind B&W — reds go dark, skies blow bright, punchy surreal contrast",
+      "bestFor": ["landscape", "street", "portrait"],
+      "light": ["sunny"],
+      "mood": ["moody", "punchy", "cinematic"],
+      "tip": "Overexpose by +0.5 to +1 stop or skin tones come out very dark — an experimental look, not for everyday portraits.",
+      "sourceUrl": "https://www.veresdenialex.com/post/orthochromatic"
+    },
+    {
+      "name": "Senova Light",
+      "film": "Author original — soft warm nostalgia; pinkish skin, greens shifting yellow-orange",
+      "bestFor": ["portrait", "travel", "everyday"],
+      "light": ["any"],
+      "mood": ["warm", "soft", "nostalgic"],
+      "tip": "The author's first nostalgic portrait profile — a must-try for flattering beauty portraits.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Ektar 100",
+      "film": "Kodak's ultra-vivid fine-grain negative — famously the most saturated print film",
+      "bestFor": ["portrait", "landscape", "travel"],
+      "light": ["any"],
+      "mood": ["vivid", "nostalgic", "punchy"],
+      "tip": "One of the author's favorites and barely changed since release — versatile from portraits to landscapes.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Sony Nostalgic Neg",
+      "film": "Author original — magenta-tinged look inspired by old, damaged vintage film photos",
+      "bestFor": ["portrait", "travel", "everyday"],
+      "light": ["any"],
+      "mood": ["warm", "nostalgic", "dreamy"],
+      "tip": "Not an emulation of Fuji's Nostalgic Neg — the magenta cast gives shots a magical, aged feel.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Zero Mute",
+      "film": "Author original — desaturated yet warm, faded hidden-gem look",
+      "bestFor": ["portrait", "travel"],
+      "light": ["any"],
+      "mood": ["muted", "warm", "soft", "nostalgic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Fortia 50",
+      "film": "Rare limited-run Fuji slide film — ultra-vivid, deep colors with an otherworldly punch",
+      "bestFor": ["street", "landscape", "documentary", "portrait"],
+      "light": ["sunny"],
+      "mood": ["vivid", "punchy", "dreamy"],
+      "tip": "The author loves it for street; try it on portraits for a highly stylized, bold look.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Velvia Pro",
+      "film": "Fuji Velvia slide film — legendary super-saturated landscape colors",
+      "bestFor": ["landscape", "nature", "travel", "street"],
+      "light": ["sunny"],
+      "mood": ["vivid", "punchy"],
+      "tip": "Punchy options like Velvia Pro thrive in bright, sunny conditions.",
+      "sourceUrl": "https://www.veresdenialex.com/post/my-favorite-film-simulations"
+    },
+    {
+      "name": "Provia RX",
+      "film": "Built on real-world Provia scans — saturated colors, deep shadows, strong magenta cast",
+      "bestFor": ["street", "landscape", "documentary", "portrait", "nature"],
+      "light": ["any"],
+      "mood": ["moody", "vivid", "nostalgic"],
+      "tip": "Distinct from Fuji's Provia sim — orange skin against a deep blue cast; great beyond portraits too.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Sony Classic Negative",
+      "film": "Author's take on the classic-negative look — balanced tones with a soft retro vibe",
+      "bestFor": ["portrait", "travel", "nature", "street"],
+      "light": ["any"],
+      "mood": ["nostalgic", "muted", "soft"],
+      "tip": "It shines in vibrant, colorful scenes like nature — expect less impact in muted cityscapes.",
+      "sourceUrl": "https://www.veresdenialex.com/post/my-favorite-film-simulations"
+    },
+    {
+      "name": "Kodak Portra 400",
+      "film": "The classic pro portrait negative — peachy skin tones with a slight magenta hue",
+      "bestFor": ["portrait", "travel", "street", "everyday"],
+      "light": ["any"],
+      "mood": ["soft", "warm", "clean"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Kodak Portra 160",
+      "film": "Low-speed Portra — creamy colors, smooth contrast, classic soft Kodak vibe",
+      "bestFor": ["portrait", "everyday"],
+      "light": ["any"],
+      "mood": ["soft", "warm", "nostalgic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Classic Chrome",
+      "film": "Fuji's muted documentary-chrome look — a classic for Sony and Fuji shooters alike",
+      "bestFor": ["street", "everyday", "documentary", "portrait"],
+      "light": ["any"],
+      "mood": ["muted", "nostalgic", "clean"],
+      "tip": "One of the safe, natural-looking recipes the author recommends starting with.",
+      "sourceUrl": "https://www.veresdenialex.com/post/my-favorite-film-simulations"
+    },
+    {
+      "name": "Cinestill 800T",
+      "film": "Tungsten cine film beloved for neon-soaked night scenes and red halation",
+      "bestFor": ["night", "street"],
+      "light": ["night", "indoor"],
+      "mood": ["cinematic", "cool", "moody"],
+      "tip": "Made for night-time use — one of the author's picks for low-light shooting.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Vespera",
+      "film": "Author original — cool-toned nighttime look, cold yet enchanting",
+      "bestFor": ["night", "street"],
+      "light": ["night"],
+      "mood": ["cool", "moody", "cinematic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Veniliqum",
+      "film": "Author original — warm-green night look for gritty city and crime-thriller moods",
+      "bestFor": ["night", "street", "documentary"],
+      "light": ["night"],
+      "mood": ["moody", "cinematic", "warm"],
+      "tip": "Great under sodium-vapor street lights, which are incredibly hard to balance out.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Gold Luxe",
+      "film": "Author original — bold warm night recipe that embraces sodium-vapor glow",
+      "bestFor": ["night", "street"],
+      "light": ["night"],
+      "mood": ["warm", "punchy", "cinematic", "moody"],
+      "tip": "Instead of fighting warm night lights, this recipe leans into them for dramatic, high-impact shots.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Midred Infra",
+      "film": "Inspired by infrared cine film (I Am Cuba, 1964) — skin and yellows pop, skies deepen",
+      "bestFor": ["street", "landscape", "portrait"],
+      "light": ["sunny"],
+      "mood": ["dreamy", "punchy", "moody"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "NeoMax",
+      "film": "Author original — bright, dreamy B&W with light skin tones and a soft nostalgic glow",
+      "bestFor": ["portrait", "everyday"],
+      "light": ["any"],
+      "mood": ["soft", "dreamy", "clean"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Ilford Delta 3200",
+      "film": "Ilford's high-speed B&W — soft, balanced tones with high dynamic range",
+      "bestFor": ["portrait", "everyday", "documentary"],
+      "light": ["any"],
+      "mood": ["soft", "clean", "nostalgic"],
+      "tip": "The author recommends it for portraits and wedding photography.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Ilford HP5",
+      "film": "Ilford's classic all-purpose B&W — well balanced with soft contrast",
+      "bestFor": ["portrait", "street", "everyday", "documentary"],
+      "light": ["any"],
+      "mood": ["soft", "clean"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/unlocking-beauty-top-sony-picture-profiles-for-stunning-portraits"
+    },
+    {
+      "name": "Kosmo Pan",
+      "film": "B&W recipe with a muted, slightly surreal tonality for offbeat portraits",
+      "bestFor": ["portrait", "street"],
+      "light": ["any"],
+      "mood": ["muted", "dreamy", "moody"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/unlocking-beauty-top-sony-picture-profiles-for-stunning-portraits"
+    },
+    {
+      "name": "DreamNeg",
+      "film": "Author original — warm, whimsical, super-soft tones; a warm hug for your JPEGs",
+      "bestFor": ["portrait", "everyday", "travel"],
+      "light": ["any"],
+      "mood": ["warm", "dreamy", "soft"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Chronochrome",
+      "film": "Author original — experimental recipe with bold, creative color shifts",
+      "bestFor": ["street", "everyday"],
+      "light": ["any"],
+      "mood": ["vivid", "punchy"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/my-favorite-film-simulations"
+    },
+    {
+      "name": "AcidNom",
+      "film": "Author original — psychedelic palette, deep unrealistic hues, a magic-forest trip",
+      "bestFor": ["street", "everyday", "nature"],
+      "light": ["any"],
+      "mood": ["vivid", "punchy", "dreamy"],
+      "tip": "Use it to see familiar surroundings in a completely new, fantastical way.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "RedScale Ultra",
+      "film": "Mimics a red lens filter / redscale film — rich crimson tones, dramatic contrast",
+      "bestFor": ["street", "landscape", "everyday"],
+      "light": ["any"],
+      "mood": ["warm", "vivid", "moody"],
+      "tip": "Perfect when you want a surreal, otherworldly atmosphere.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "GAF 500",
+      "film": "GAF/Anscochrome 500 — first ISO 500 film; grainy, amber-leaning, softly desaturated",
+      "bestFor": ["everyday", "street", "portrait"],
+      "light": ["any"],
+      "mood": ["warm", "nostalgic", "muted"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/my-favorite-film-simulations"
+    },
+    {
+      "name": "Classic Cinema",
+      "film": "Author original — sunny, bright 90s-movie look with subtle color shifts",
+      "bestFor": ["everyday", "portrait", "street"],
+      "light": ["sunny"],
+      "mood": ["warm", "cinematic", "nostalgic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Ektachrome",
+      "film": "Kodak's cool-toned slide film — vibrant colors that shift with the light",
+      "bestFor": ["travel", "street", "landscape"],
+      "light": ["any"],
+      "mood": ["cool", "vivid", "dreamy"],
+      "tip": "Its colors shift with lighting conditions — treat every shot as an experiment.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Kodak Ultra Max 400",
+      "film": "Kodak's everyday consumer film — natural look with a slight, warm film touch",
+      "bestFor": ["everyday", "travel"],
+      "light": ["any"],
+      "mood": ["warm", "soft", "clean"],
+      "tip": "A great starter recipe if you want a subtle film look without going overboard.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Kodak Color Plus 200",
+      "film": "Kodak's budget classic — like a subtler Kodak Gold with more accurate skin tones",
+      "bestFor": ["everyday", "portrait"],
+      "light": ["any"],
+      "mood": ["warm", "clean", "nostalgic"],
+      "tip": "Choose it over Kodak Gold when you want warmth but more accurate skin tones.",
+      "sourceUrl": "https://www.veresdenialex.com/post/unlocking-beauty-top-sony-picture-profiles-for-stunning-portraits"
+    },
+    {
+      "name": "Sony Eterna",
+      "film": "Eterna-style flat cine look tuned for a ready-to-go image straight out of camera",
+      "bestFor": ["portrait", "everyday", "documentary"],
+      "light": ["any"],
+      "mood": ["muted", "soft", "cinematic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "EvPro+",
+      "film": "Author original — versatile all-rounder: dynamic range, rich color, strong low light",
+      "bestFor": ["everyday", "travel", "documentary"],
+      "light": ["any"],
+      "mood": ["clean", "cinematic"],
+      "tip": "The author's long-time go-to when 8-bit S-Log is too noisy — ready out of camera with room to grade.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Fuji 400H",
+      "film": "Fujicolor Pro 400H — cool pastel wedding-film look; recipe adds richer color",
+      "bestFor": ["portrait", "everyday"],
+      "light": ["any"],
+      "mood": ["cool", "soft", "clean"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    },
+    {
+      "name": "Fuji Provia",
+      "film": "Fuji's standard slide-film simulation — balanced, true-to-life colors",
+      "bestFor": ["everyday", "street", "travel"],
+      "light": ["any"],
+      "mood": ["clean"],
+      "tip": "Listed among the classic, natural recipes for beginners.",
+      "sourceUrl": "https://www.veresdenialex.com/post/my-favorite-film-simulations"
+    },
+    {
+      "name": "LeicaChrome",
+      "film": "Modeled on Leica M9 JPEGs — classic CCD digital-chrome color rendering",
+      "bestFor": ["portrait", "street"],
+      "light": ["any"],
+      "mood": ["clean", "nostalgic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-update-comparing-all-sony-film-simulations"
+    }
+  ]
+}

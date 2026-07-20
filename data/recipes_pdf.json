@@ -1,0 +1,2589 @@
+{
+  "source": "Sony Film Simulation Recipes V.pdf",
+  "recipes": [
+    {
+      "page": 3,
+      "name": "Vektro 100",
+      "wbSummary": "4000 Kelvin A5-M0.5",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "Still",
+        "blackGamma": "Wide -7",
+        "knee": "Manual 92.5% +5",
+        "colorMode": "S-Gamut3",
+        "saturation": "+27",
+        "colorPhase": "+6",
+        "colorDepth": {
+          "R": "+5",
+          "G": "+7",
+          "B": "+5",
+          "C": "+5",
+          "M": "+2",
+          "Y": "0"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4000 K A5-M0.5"
+      ],
+      "notes": [],
+      "id": "vektro-100",
+      "image": "assets/recipes/vektro-100.jpg",
+      "bw": false
+    },
+    {
+      "page": 4,
+      "name": "Senova Light",
+      "wbSummary": "8000 Kelvin B2-M2",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "Cine3",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 85% +4",
+        "colorMode": "S-Gamut3",
+        "saturation": "+20",
+        "colorPhase": "+7",
+        "colorDepth": {
+          "R": "-5",
+          "G": "-1",
+          "B": "+3",
+          "C": "+4",
+          "M": "+5",
+          "Y": "+2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "Daytime 8000 K B2-M2",
+        "Nighttime 2900K A5-G1"
+      ],
+      "notes": [],
+      "id": "senova-light",
+      "image": "assets/recipes/senova-light.jpg",
+      "bw": false
+    },
+    {
+      "page": 5,
+      "name": "Fuji 400H",
+      "wbSummary": "3500Kelvin A7-M0.25",
+      "settings": {
+        "blackLevel": "0",
+        "gamma": "Movie",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 80% +4",
+        "colorMode": "Still",
+        "saturation": "+11",
+        "colorPhase": "-3",
+        "colorDepth": {
+          "R": "-4",
+          "G": "+7",
+          "B": "-3",
+          "C": "-3",
+          "M": "-5",
+          "Y": "-3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3500 K A7-M0.25"
+      ],
+      "notes": [],
+      "id": "fuji-400h",
+      "image": "assets/recipes/fuji-400h.jpg",
+      "bw": false
+    },
+    {
+      "page": 6,
+      "name": "EvPro+",
+      "wbSummary": "4300Kelvin A3.5",
+      "settings": {
+        "blackLevel": "-10",
+        "gamma": "Cine1",
+        "blackGamma": "Middle +7",
+        "knee": "Auto",
+        "colorMode": "S-Gamut3/ S-Gamut",
+        "saturation": "+25",
+        "colorPhase": "+5",
+        "colorDepth": {
+          "R": "-3",
+          "G": "+4",
+          "B": "+3",
+          "C": "+3",
+          "M": "-2",
+          "Y": "+2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4300 K A3.5"
+      ],
+      "notes": [],
+      "id": "evpro",
+      "image": "assets/recipes/evpro.jpg",
+      "bw": false
+    },
+    {
+      "page": 7,
+      "name": "Ektar 100",
+      "wbSummary": "5000 Kelvin A2-M1",
+      "settings": {
+        "blackLevel": "+6",
+        "gamma": "Still",
+        "blackGamma": "Wide -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "S-Gamut3.Cine",
+        "saturation": "+25",
+        "colorPhase": "+2",
+        "colorDepth": {
+          "R": "-3",
+          "G": "+7",
+          "B": "+5",
+          "C": "+5",
+          "M": "+5",
+          "Y": "+1"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "5000 K A2-M1"
+      ],
+      "notes": [],
+      "id": "ektar-100",
+      "image": "assets/recipes/ektar-100.jpg",
+      "bw": false
+    },
+    {
+      "page": 8,
+      "name": "Kodak Gold",
+      "wbSummary": "8000 Kelvin B3-M1.75",
+      "settings": {
+        "blackLevel": "-5",
+        "gamma": "Movie",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 75% +4",
+        "colorMode": "S-Gamut3/S-Gamut",
+        "saturation": "+32",
+        "colorPhase": "+6",
+        "colorDepth": {
+          "R": "-4",
+          "G": "0",
+          "B": "+5",
+          "C": "+5",
+          "M": "+5",
+          "Y": "+4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "8000 K B3-M1.75"
+      ],
+      "notes": [],
+      "id": "kodak-gold",
+      "image": "assets/recipes/kodak-gold.jpg",
+      "bw": false
+    },
+    {
+      "page": 9,
+      "name": "Portra 800",
+      "wbSummary": "4500K A7-M1",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "S-Log2/S-Log3",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75% +5",
+        "colorMode": "Still",
+        "saturation": "+20 or +32",
+        "colorPhase": "+3",
+        "colorDepth": {
+          "R": "+3",
+          "G": "+5",
+          "B": "+5",
+          "C": "+7",
+          "M": "+7",
+          "Y": "-3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4500 K A7-M1"
+      ],
+      "notes": [
+        "! Turn Off Gamma Assist !"
+      ],
+      "id": "portra-800",
+      "image": "assets/recipes/portra-800.jpg",
+      "bw": false
+    },
+    {
+      "page": 10,
+      "name": "Kodak Portra 400",
+      "wbSummary": "4000 Kelvin A7-M1",
+      "settings": {
+        "blackLevel": "+3",
+        "gamma": "Movie",
+        "blackGamma": "Narrow -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Still",
+        "saturation": "+12",
+        "colorPhase": "+1",
+        "colorDepth": {
+          "R": "+2",
+          "G": "+5",
+          "B": "-4",
+          "C": "-3",
+          "M": "+4",
+          "Y": "-3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4000 K A7-M1"
+      ],
+      "notes": [],
+      "id": "kodak-portra-400",
+      "image": "assets/recipes/kodak-portra-400.jpg",
+      "bw": false
+    },
+    {
+      "page": 11,
+      "name": "Kodak Portra 160",
+      "wbSummary": "4200 K A7-M2",
+      "settings": {
+        "blackLevel": "-10",
+        "gamma": "Movie",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Still",
+        "saturation": "+7",
+        "colorPhase": "+3",
+        "colorDepth": {
+          "R": "-3",
+          "G": "+7",
+          "B": "-3",
+          "C": "-3",
+          "M": "-5",
+          "Y": "+4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4200 K A7-M2"
+      ],
+      "notes": [],
+      "id": "kodak-portra-160",
+      "image": "assets/recipes/kodak-portra-160.jpg",
+      "bw": false
+    },
+    {
+      "page": 12,
+      "name": "Kodak Color Plus 200",
+      "wbSummary": "4000 Kelvin A7-M1",
+      "settings": {
+        "blackLevel": "+2",
+        "gamma": "Still",
+        "blackGamma": "Middle +7",
+        "knee": "Manual 75% +5",
+        "colorMode": "S-Gamut3",
+        "saturation": "+25",
+        "colorPhase": "+7",
+        "colorDepth": {
+          "R": "+2",
+          "G": "+7",
+          "B": "+7",
+          "C": "+7",
+          "M": "+7",
+          "Y": "+4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4000 K A7-M1"
+      ],
+      "notes": [],
+      "id": "kodak-color-plus-200",
+      "image": "assets/recipes/kodak-color-plus-200.jpg",
+      "bw": false
+    },
+    {
+      "page": 13,
+      "name": "Kodak Ultra Max 400",
+      "wbSummary": "3800 K A7-M0.5",
+      "settings": {
+        "blackLevel": "+3",
+        "gamma": "Still",
+        "blackGamma": "Wide -7",
+        "knee": "Manual 75% +3",
+        "colorMode": "Pro",
+        "saturation": "+16",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "-2",
+          "G": "+7",
+          "B": "+3",
+          "C": "+7",
+          "M": "+5",
+          "Y": "-2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3800 K A7-M0.5"
+      ],
+      "notes": [],
+      "id": "kodak-ultra-max-400",
+      "image": "assets/recipes/kodak-ultra-max-400.jpg",
+      "bw": false
+    },
+    {
+      "page": 14,
+      "name": "EktaChrome",
+      "wbSummary": "3400 Kelvin A5.5-M1",
+      "settings": {
+        "blackLevel": "-4",
+        "gamma": "Movie",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 80% +4",
+        "colorMode": "Still",
+        "saturation": "+10",
+        "colorPhase": "-1",
+        "colorDepth": {
+          "R": "+3",
+          "G": "+5",
+          "B": "-4",
+          "C": "+2",
+          "M": "+6",
+          "Y": "+5"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3400 K A5.5-M1"
+      ],
+      "notes": [],
+      "id": "ektachrome",
+      "image": "assets/recipes/ektachrome.jpg",
+      "bw": false
+    },
+    {
+      "page": 15,
+      "name": "Kodachrome 64 V1",
+      "wbSummary": "3600 Kelvin A7-M0.75",
+      "settings": {
+        "blackLevel": "+8",
+        "gamma": "Still",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Still",
+        "saturation": "+15",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "+5",
+          "G": "+7",
+          "B": "+7",
+          "C": "+7",
+          "M": "+7",
+          "Y": "+3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3400-4200 K A7-M0.75"
+      ],
+      "notes": [],
+      "id": "kodachrome-64-v1",
+      "image": "assets/recipes/kodachrome-64-v1.jpg",
+      "bw": false
+    },
+    {
+      "page": 16,
+      "name": "Kodachrome 64 V2",
+      "wbSummary": "4300K A7-M1",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "Cine1",
+        "blackGamma": "Middle +7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Still",
+        "saturation": "+20",
+        "colorPhase": "+2",
+        "colorDepth": {
+          "R": "+2",
+          "G": "+6",
+          "B": "+2",
+          "C": "+7",
+          "M": "+7",
+          "Y": "+2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3700 -4500 K A7-M1"
+      ],
+      "notes": [],
+      "id": "kodachrome-64-v2",
+      "image": "assets/recipes/kodachrome-64-v2.jpg",
+      "bw": false
+    },
+    {
+      "page": 17,
+      "name": "Kodachrome 25",
+      "wbSummary": "7000K B2-M0.5",
+      "settings": {
+        "blackLevel": "-9",
+        "gamma": "Movie",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Still",
+        "saturation": "+23",
+        "colorPhase": "-2",
+        "colorDepth": {
+          "R": "-2",
+          "G": "+7",
+          "B": "-3",
+          "C": "+4",
+          "M": "+7",
+          "Y": "-2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "7000 K B6-G0.5"
+      ],
+      "notes": [],
+      "id": "kodachrome-25",
+      "image": "assets/recipes/kodachrome-25.jpg",
+      "bw": false
+    },
+    {
+      "page": 18,
+      "name": "Sony Eterna",
+      "wbSummary": "4000 Kelvin A7-M1",
+      "settings": {
+        "blackLevel": "-5",
+        "gamma": "Cine4",
+        "blackGamma": "Wide -5",
+        "knee": "Manual 87.5% +3",
+        "colorMode": "S-Gamut3",
+        "saturation": "+32",
+        "colorPhase": "+6",
+        "colorDepth": {
+          "R": "-3",
+          "G": "-2",
+          "B": "+3",
+          "C": "+7",
+          "M": "-3",
+          "Y": "-2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4000 K A7-M1"
+      ],
+      "notes": [],
+      "id": "sony-eterna",
+      "image": "assets/recipes/sony-eterna.jpg",
+      "bw": false
+    },
+    {
+      "page": 19,
+      "name": "Fuji Eterna",
+      "wbSummary": "4200K A6-M0.75",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "Movie",
+        "blackGamma": "Wide -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Still",
+        "saturation": "-2",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "-3",
+          "G": "+7",
+          "B": "-3",
+          "C": "+7",
+          "M": "+4",
+          "Y": "+1"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4200 K A6-M0.75"
+      ],
+      "notes": [],
+      "id": "fuji-eterna",
+      "image": "assets/recipes/fuji-eterna.jpg",
+      "bw": false
+    },
+    {
+      "page": 20,
+      "name": "Classic Chrome",
+      "wbSummary": "4100K A7-M0.25",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "Movie",
+        "blackGamma": "Middle +2",
+        "knee": "Manual 75% +4",
+        "colorMode": "Still",
+        "saturation": "-6",
+        "colorPhase": "+1",
+        "colorDepth": {
+          "R": "-1",
+          "G": "+7",
+          "B": "+4",
+          "C": "+5",
+          "M": "-6",
+          "Y": "+1"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4100 K A7-M0.25"
+      ],
+      "notes": [],
+      "id": "classic-chrome",
+      "image": "assets/recipes/classic-chrome.jpg",
+      "bw": false
+    },
+    {
+      "page": 21,
+      "name": "Astia",
+      "wbSummary": "3800 Kelvin A7",
+      "settings": {
+        "blackLevel": "-4",
+        "gamma": "Still",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Still",
+        "saturation": "+2",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "-5",
+          "G": "+2",
+          "B": "-5",
+          "C": "+2",
+          "M": "-7",
+          "Y": "0"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3800 K A7"
+      ],
+      "notes": [],
+      "id": "astia",
+      "image": "assets/recipes/astia.jpg",
+      "bw": false
+    },
+    {
+      "page": 22,
+      "name": "Velvia Pro",
+      "wbSummary": "4000 Kelvin A7-M1",
+      "settings": {
+        "blackLevel": "-14",
+        "gamma": "Still",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75% +5",
+        "colorMode": "Still",
+        "saturation": "+7",
+        "colorPhase": "-2",
+        "colorDepth": {
+          "R": "-6",
+          "G": "+5",
+          "B": "-4",
+          "C": "+2",
+          "M": "-7",
+          "Y": "-1"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4000 K A7-M1"
+      ],
+      "notes": [],
+      "id": "velvia-pro",
+      "image": "assets/recipes/velvia-pro.jpg",
+      "bw": false
+    },
+    {
+      "page": 23,
+      "name": "Fuji Provia",
+      "wbSummary": "4100 Kelvin A7-M1",
+      "settings": {
+        "blackLevel": "-10",
+        "gamma": "Movie",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75+4",
+        "colorMode": "Still",
+        "saturation": "+1",
+        "colorPhase": "-1",
+        "colorDepth": {
+          "R": "-3",
+          "G": "+7",
+          "B": "0",
+          "C": "+5",
+          "M": "+1",
+          "Y": "+1"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4100 K A7-M1"
+      ],
+      "notes": [],
+      "id": "fuji-provia",
+      "image": "assets/recipes/fuji-provia.jpg",
+      "bw": false
+    },
+    {
+      "page": 24,
+      "name": "Provia RX",
+      "wbSummary": "4000 Kelvin A6.5-M1.75",
+      "settings": {
+        "blackLevel": "-10",
+        "gamma": "Movie",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 80+3",
+        "colorMode": "Still",
+        "saturation": "+5",
+        "colorPhase": "-2",
+        "colorDepth": {
+          "R": "-2",
+          "G": "+7",
+          "B": "+7",
+          "C": "+5",
+          "M": "+3",
+          "Y": "+1"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4000 K A6.5-M1.75"
+      ],
+      "notes": [],
+      "id": "provia-rx",
+      "image": "assets/recipes/provia-rx.jpg",
+      "bw": false
+    },
+    {
+      "page": 25,
+      "name": "Acros X",
+      "wbSummary": "AWB",
+      "settings": {
+        "blackLevel": "-11",
+        "gamma": "Still",
+        "blackGamma": "Middle -3",
+        "knee": "Manual 85% +5",
+        "colorMode": "Black & White",
+        "saturation": "+15",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "-1",
+          "G": "+1",
+          "B": "-1",
+          "C": "+3",
+          "M": "-3",
+          "Y": "-1"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "AWB-White Priority"
+      ],
+      "notes": [],
+      "id": "acros-x",
+      "image": "assets/recipes/acros-x.jpg",
+      "bw": true
+    },
+    {
+      "page": 26,
+      "name": "Acros XY",
+      "wbSummary": "AWB",
+      "settings": {
+        "blackLevel": "-10",
+        "gamma": "Still",
+        "blackGamma": "Middle -3",
+        "knee": "Manual 85% +4",
+        "colorMode": "Black & White",
+        "saturation": "+15",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "-4",
+          "G": "+1",
+          "B": "+3",
+          "C": "+3",
+          "M": "-4",
+          "Y": "-1"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "AWB-White Priority"
+      ],
+      "notes": [],
+      "id": "acros-xy",
+      "image": "assets/recipes/acros-xy.jpg",
+      "bw": true
+    },
+    {
+      "page": 27,
+      "name": "Acros XR",
+      "wbSummary": "AWB",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "Still",
+        "blackGamma": "Middle +5",
+        "knee": "Manual 85% +5",
+        "colorMode": "Black & White",
+        "saturation": "+15",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "-6",
+          "G": "+1",
+          "B": "+5",
+          "C": "+4",
+          "M": "-6",
+          "Y": "-2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "AWB-White Priority"
+      ],
+      "notes": [],
+      "id": "acros-xr",
+      "image": "assets/recipes/acros-xr.jpg",
+      "bw": true
+    },
+    {
+      "page": 28,
+      "name": "Acros XG",
+      "wbSummary": "AWB",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "Still",
+        "blackGamma": "Wide -7",
+        "knee": "Manual 85% +5",
+        "colorMode": "Black & White",
+        "saturation": "+15",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "+2",
+          "G": "-4",
+          "B": "-1",
+          "C": "+2",
+          "M": "-1",
+          "Y": "+2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "AWB-White Priority"
+      ],
+      "notes": [],
+      "id": "acros-xg",
+      "image": "assets/recipes/acros-xg.jpg",
+      "bw": true
+    },
+    {
+      "page": 29,
+      "name": "Fortia 50",
+      "wbSummary": "3500K A7-G0.25",
+      "settings": {
+        "blackLevel": "-2",
+        "gamma": "Still",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 75% +5",
+        "colorMode": "ITU709Matrix",
+        "saturation": "+18",
+        "colorPhase": "-3",
+        "colorDepth": {
+          "R": "+5",
+          "G": "+7",
+          "B": "+7",
+          "C": "+7",
+          "M": "+7",
+          "Y": "-4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3500 K A7-G0.25 or A7-M0.25"
+      ],
+      "notes": [],
+      "id": "fortia-50",
+      "image": "assets/recipes/fortia-50.jpg",
+      "bw": false
+    },
+    {
+      "page": 30,
+      "name": "Sony Classic Negative",
+      "wbSummary": "9900K B7-M1",
+      "settings": {
+        "blackLevel": "+3",
+        "gamma": "Still",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "S-Cinetone/Still",
+        "saturation": "-1",
+        "colorPhase": "+1",
+        "colorDepth": {
+          "R": "+2",
+          "G": "+7",
+          "B": "+7",
+          "C": "+1",
+          "M": "-5",
+          "Y": "+3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "9900 K B7-M1"
+      ],
+      "notes": [],
+      "id": "sony-classic-negative",
+      "image": "assets/recipes/sony-classic-negative.jpg",
+      "bw": false
+    },
+    {
+      "page": 31,
+      "name": "Nostalgic Neg",
+      "wbSummary": "4500K A7-M2.75",
+      "settings": {
+        "blackLevel": "+6",
+        "gamma": "Still",
+        "blackGamma": "Middle +7",
+        "knee": "Manual 80% +4",
+        "colorMode": "Pro",
+        "saturation": "+10",
+        "colorPhase": "-3",
+        "colorDepth": {
+          "R": "+2",
+          "G": "+5",
+          "B": "-7",
+          "C": "+4",
+          "M": "-6",
+          "Y": "+3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4500 K A7-M2.75"
+      ],
+      "notes": [],
+      "id": "nostalgic-neg",
+      "image": "assets/recipes/nostalgic-neg.jpg",
+      "bw": false
+    },
+    {
+      "page": 32,
+      "name": "Classic Cinema",
+      "wbSummary": "Auto White Balance",
+      "settings": {
+        "blackLevel": "-2",
+        "gamma": "Movie",
+        "blackGamma": "Wide +7",
+        "knee": "Auto",
+        "colorMode": "Still",
+        "saturation": "+12",
+        "colorPhase": "-1",
+        "colorDepth": {
+          "R": "-4",
+          "G": "+7",
+          "B": "-5",
+          "C": "+5",
+          "M": "-5",
+          "Y": "-2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "AWB White Priority A2-G0.25"
+      ],
+      "notes": [],
+      "id": "classic-cinema",
+      "image": "assets/recipes/classic-cinema.jpg",
+      "bw": false
+    },
+    {
+      "page": 33,
+      "name": "Oktar",
+      "wbSummary": "7000 Kelvin B2-M1",
+      "settings": {
+        "blackLevel": "-10",
+        "gamma": "Movie",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Movie",
+        "saturation": "+25",
+        "colorPhase": "+2",
+        "colorDepth": {
+          "R": "+2",
+          "G": "+7",
+          "B": "+7",
+          "C": "+7",
+          "M": "+7",
+          "Y": "+2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "7000 K B2-M1"
+      ],
+      "notes": [],
+      "id": "oktar",
+      "image": "assets/recipes/oktar.jpg",
+      "bw": false
+    },
+    {
+      "page": 34,
+      "name": "Zero Mute",
+      "wbSummary": "7000 Kelvin B1-M1",
+      "settings": {
+        "blackLevel": "+7",
+        "gamma": "Still",
+        "blackGamma": "Middle +7",
+        "knee": "Manual 80% +4",
+        "colorMode": "S-Gamut3",
+        "saturation": "+10",
+        "colorPhase": "+7",
+        "colorDepth": {
+          "R": "0",
+          "G": "+7",
+          "B": "+5",
+          "C": "+5",
+          "M": "+5",
+          "Y": "-3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "7000 K B1-M1"
+      ],
+      "notes": [],
+      "id": "zero-mute",
+      "image": "assets/recipes/zero-mute.jpg",
+      "bw": false
+    },
+    {
+      "page": 35,
+      "name": "CineChrome",
+      "wbSummary": "3900K A7",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "HLG3",
+        "blackGamma": "Wide 0",
+        "knee": "Auto",
+        "colorMode": "BT.2020",
+        "saturation": "+32",
+        "colorPhase": "+7",
+        "colorDepth": {
+          "R": "-4",
+          "G": "-1",
+          "B": "+6",
+          "C": "+6",
+          "M": "+5",
+          "Y": "-4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3900 K A7"
+      ],
+      "notes": [
+        "! Turn Off Gamma Assist !"
+      ],
+      "id": "cinechrome",
+      "image": "assets/recipes/cinechrome.jpg",
+      "bw": false
+    },
+    {
+      "page": 36,
+      "name": "Pro Color",
+      "wbSummary": "3900 Kelvin A7-G1.25",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "HLG3",
+        "blackGamma": "Wide 0",
+        "knee": "Auto 90% High",
+        "colorMode": "Rec.709",
+        "saturation": "+22",
+        "colorPhase": "+2",
+        "colorDepth": {
+          "R": "+1",
+          "G": "+7",
+          "B": "+3",
+          "C": "-4",
+          "M": "-4",
+          "Y": "+5"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3900 K A7-G1.25"
+      ],
+      "notes": [
+        "! Turn Off Gamma Assist !"
+      ],
+      "id": "pro-color",
+      "image": "assets/recipes/pro-color.jpg",
+      "bw": false
+    },
+    {
+      "page": 37,
+      "name": "Blue Velvet / Cinestill 50D",
+      "wbSummary": "7400Kelvin B4-M1.5",
+      "settings": {
+        "blackLevel": "0",
+        "gamma": "Still",
+        "blackGamma": "Middle +7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Still",
+        "saturation": "+10",
+        "colorPhase": "-3",
+        "colorDepth": {
+          "R": "+4",
+          "G": "+5",
+          "B": "-2",
+          "C": "+3",
+          "M": "+5",
+          "Y": "+2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "7400 K B4-M1.5"
+      ],
+      "notes": [],
+      "id": "blue-velvet-cinestill-50d",
+      "image": "assets/recipes/blue-velvet-cinestill-50d.jpg",
+      "bw": false
+    },
+    {
+      "page": 38,
+      "name": "Cinestill 800T - Nightime Recipe",
+      "wbSummary": "2700K A7-M1.25",
+      "settings": {
+        "blackLevel": "+3",
+        "gamma": "Movie",
+        "blackGamma": "Wide +7",
+        "knee": "Auto",
+        "colorMode": "Still",
+        "saturation": "+2",
+        "colorPhase": "+5",
+        "colorDepth": {
+          "R": "-5",
+          "G": "-7",
+          "B": "-7",
+          "C": "+3",
+          "M": "-7",
+          "Y": "-5"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "2700 K A7-M1.25"
+      ],
+      "notes": [
+        "Check this playlist for the basic workﬂow https://youtube.com/playlist?list=PL-gfcmjtW3nup_6nXvu8JTn3obVpU2-o-&si=rv0vwEauDuwe"
+      ],
+      "id": "cinestill-800t-nightime-recipe",
+      "image": "assets/recipes/cinestill-800t-nightime-recipe.jpg",
+      "bw": false
+    },
+    {
+      "page": 39,
+      "name": "Cinestill X",
+      "wbSummary": "5500K",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "Still",
+        "blackGamma": "Wide -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Black & White",
+        "saturation": "+32",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "+2",
+          "G": "+7",
+          "B": "+1",
+          "C": "+2",
+          "M": "+7",
+          "Y": "+1"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "5500"
+      ],
+      "notes": [],
+      "id": "cinestill-x",
+      "image": "assets/recipes/cinestill-x.jpg",
+      "bw": true
+    },
+    {
+      "page": 40,
+      "name": "T-Max 100",
+      "wbSummary": "AWB B3-G0.25",
+      "settings": {
+        "blackLevel": "-12",
+        "gamma": "Still",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 82% +5",
+        "colorMode": "Black & White",
+        "saturation": "0",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "-1",
+          "G": "-7",
+          "B": "+7",
+          "C": "+7",
+          "M": "+7",
+          "Y": "-4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Temperature Color Filter",
+        "AWB-White Priority B3-G0.25"
+      ],
+      "notes": [],
+      "id": "t-max-100",
+      "image": "assets/recipes/t-max-100.jpg",
+      "bw": true
+    },
+    {
+      "page": 41,
+      "name": "Delta 3200",
+      "wbSummary": "AWB",
+      "settings": {
+        "blackLevel": "-11",
+        "gamma": "Cine4",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 82.5% +0",
+        "colorMode": "Black&White",
+        "saturation": "0",
+        "colorPhase": "-2",
+        "colorDepth": {
+          "R": "+6",
+          "G": "+2",
+          "B": "+7",
+          "C": "+7",
+          "M": "+4",
+          "Y": "-5"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "AWB-White Priority"
+      ],
+      "notes": [],
+      "id": "delta-3200",
+      "image": "assets/recipes/delta-3200.jpg",
+      "bw": true
+    },
+    {
+      "page": 42,
+      "name": "Kosmo Pan",
+      "wbSummary": "AWB",
+      "settings": {
+        "blackLevel": "-8",
+        "gamma": "Cine3",
+        "blackGamma": "Narrow -7",
+        "knee": "Manual 75% +3",
+        "colorMode": "Black & White",
+        "saturation": "0",
+        "colorPhase": "-2",
+        "colorDepth": {
+          "R": "-4",
+          "G": "+3",
+          "B": "+7",
+          "C": "0",
+          "M": "+7",
+          "Y": "-5"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "AWB-White Priority"
+      ],
+      "notes": [],
+      "id": "kosmo-pan",
+      "image": "assets/recipes/kosmo-pan.jpg",
+      "bw": true
+    },
+    {
+      "page": 43,
+      "name": "Chroma Fade",
+      "wbSummary": "AWB",
+      "settings": {
+        "blackLevel": "+3",
+        "gamma": "Still",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75% +2",
+        "colorMode": "Black & White",
+        "saturation": "0",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "+5",
+          "G": "+5",
+          "B": "+7",
+          "C": "+2",
+          "M": "+7",
+          "Y": "-4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "AWB-White Priority"
+      ],
+      "notes": [],
+      "id": "chroma-fade",
+      "image": "assets/recipes/chroma-fade.jpg",
+      "bw": true
+    },
+    {
+      "page": 44,
+      "name": "Kodak Tri -X - 1600 Pushed",
+      "wbSummary": "5500 Kelvin A3-G2",
+      "settings": {
+        "blackLevel": "+5",
+        "gamma": "Still",
+        "blackGamma": "Wide -7",
+        "knee": "Manual 77.5% +2",
+        "colorMode": "Black & White",
+        "saturation": "+24",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "-4",
+          "G": "-1",
+          "B": "+6",
+          "C": "+5",
+          "M": "-3",
+          "Y": "-3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "5500 K A3-G2"
+      ],
+      "notes": [
+        "Punchy Contrast - High Grain",
+        "Turn Off Noise Reduction for JPG Images",
+        "Shoot ISO 1600 or higher to increase Granularity"
+      ],
+      "id": "kodak-tri-x-1600-pushed",
+      "image": "assets/recipes/kodak-tri-x-1600-pushed.jpg",
+      "bw": true
+    },
+    {
+      "page": 45,
+      "name": "Kodak Tri -X 400",
+      "wbSummary": "5500 Kelvin A3-G2",
+      "settings": {
+        "blackLevel": "+3",
+        "gamma": "Cine1",
+        "blackGamma": "Narrow +5",
+        "knee": "Manual 75% +3",
+        "colorMode": "Black & White",
+        "saturation": "+24",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "+3",
+          "G": "+3",
+          "B": "+3",
+          "C": "+2",
+          "M": "+3",
+          "Y": "+2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "5500 K A3-G2"
+      ],
+      "notes": [
+        "Soft Flat Contrast - Mid Grain",
+        "Turn On Noise Reduction for JPG Images & Set to Low",
+        "Shoot ISO 1600 or higher to increase Granularity"
+      ],
+      "id": "kodak-tri-x-400",
+      "image": "assets/recipes/kodak-tri-x-400.jpg",
+      "bw": true
+    },
+    {
+      "page": 46,
+      "name": "Neo Max",
+      "wbSummary": "6000 Kelvin B2.5-M1.5",
+      "settings": {
+        "blackLevel": "+2",
+        "gamma": "Movie",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Black & White",
+        "saturation": "+32",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "-4",
+          "G": "+5",
+          "B": "+4",
+          "C": "0",
+          "M": "-5",
+          "Y": "-3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "6000 K B2.5-M1.5"
+      ],
+      "notes": [],
+      "id": "neo-max",
+      "image": "assets/recipes/neo-max.jpg",
+      "bw": true
+    },
+    {
+      "page": 47,
+      "name": "Ilford HP5",
+      "wbSummary": "AWB A3",
+      "settings": {
+        "blackLevel": "-12",
+        "gamma": "Cine1",
+        "blackGamma": "Middle -5",
+        "knee": "Manual 75% +4",
+        "colorMode": "Black & White",
+        "saturation": "0",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "0",
+          "G": "+3",
+          "B": "+3",
+          "C": "+3",
+          "M": "+3",
+          "Y": "0"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "AWB A3"
+      ],
+      "notes": [],
+      "id": "ilford-hp5",
+      "image": "assets/recipes/ilford-hp5.jpg",
+      "bw": true
+    },
+    {
+      "page": 48,
+      "name": "MidRed Infra",
+      "wbSummary": "AWB",
+      "settings": {
+        "blackLevel": "-10",
+        "gamma": "Still",
+        "blackGamma": "Wide -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Black & White",
+        "saturation": "+32",
+        "colorPhase": "+4",
+        "colorDepth": {
+          "R": "-7",
+          "G": "-7",
+          "B": "+7",
+          "C": "+7",
+          "M": "+7",
+          "Y": "-5"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "AWB-White Priority"
+      ],
+      "notes": [],
+      "id": "midred-infra",
+      "image": "assets/recipes/midred-infra.jpg",
+      "bw": true
+    },
+    {
+      "page": 49,
+      "name": "DreamNeg",
+      "wbSummary": "4500 Kelvin A7",
+      "settings": {
+        "blackLevel": "-5",
+        "gamma": "Cine1 or Cine4",
+        "blackGamma": "Middle -7",
+        "knee": "Auto",
+        "colorMode": "Still",
+        "saturation": "+25",
+        "colorPhase": "+3",
+        "colorDepth": {
+          "R": "-2",
+          "G": "+5",
+          "B": "-2",
+          "C": "+3",
+          "M": "+3",
+          "Y": "-1"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4500 K A7"
+      ],
+      "notes": [],
+      "id": "dreamneg",
+      "image": "assets/recipes/dreamneg.jpg",
+      "bw": false
+    },
+    {
+      "page": 50,
+      "name": "Agfa Precisa",
+      "wbSummary": "3200 Kelvin A7-G1.5",
+      "settings": {
+        "blackLevel": "+1",
+        "gamma": "Still",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "S-Gamut3.Cine",
+        "saturation": "+32",
+        "colorPhase": "+2",
+        "colorDepth": {
+          "R": "+4",
+          "G": "+1",
+          "B": "+7",
+          "C": "+1",
+          "M": "+7",
+          "Y": "+2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3200 K A7-G1.5 or A7-M1.5"
+      ],
+      "notes": [],
+      "id": "agfa-precisa",
+      "image": "assets/recipes/agfa-precisa.jpg",
+      "bw": false
+    },
+    {
+      "page": 51,
+      "name": "RedScale Ultra",
+      "wbSummary": ">9900+ B3-G2",
+      "settings": {
+        "blackLevel": "+5",
+        "gamma": "Still",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "ITU709Matrix",
+        "saturation": "+7",
+        "colorPhase": "-1",
+        "colorDepth": {
+          "R": "+5",
+          "G": "+7",
+          "B": "+5",
+          "C": "+5",
+          "M": "-7",
+          "Y": "-2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        ">9900+ K B3-G2 or A7-G7",
+        "Set with Custom WB",
+        "and a Teal Card"
+      ],
+      "notes": [],
+      "id": "redscale-ultra",
+      "image": "assets/recipes/redscale-ultra.jpg",
+      "bw": false
+    },
+    {
+      "page": 52,
+      "name": "Zetra 100",
+      "wbSummary": "4700 Kelvin A3.5-M1.25",
+      "settings": {
+        "blackLevel": "-6",
+        "gamma": "Cine4",
+        "blackGamma": "Narrow -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Still",
+        "saturation": "+9",
+        "colorPhase": "-1",
+        "colorDepth": {
+          "R": "+7",
+          "G": "+7",
+          "B": "-7",
+          "C": "+5",
+          "M": "-7",
+          "Y": "-1"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4700 K A3.5-M1.25"
+      ],
+      "notes": [],
+      "id": "zetra-100",
+      "image": "assets/recipes/zetra-100.jpg",
+      "bw": false
+    },
+    {
+      "page": 53,
+      "name": "Rose Spectra",
+      "wbSummary": "3500 Kelvin A7-M0.5",
+      "settings": {
+        "blackLevel": "+6",
+        "gamma": "Still",
+        "blackGamma": "Wide -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Pro",
+        "saturation": "+25",
+        "colorPhase": "+2",
+        "colorDepth": {
+          "R": "-2",
+          "G": "+7",
+          "B": "+4",
+          "C": "-3",
+          "M": "+5",
+          "Y": "-4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3500 K A7-M0.5"
+      ],
+      "notes": [],
+      "id": "rose-spectra",
+      "image": "assets/recipes/rose-spectra.jpg",
+      "bw": false
+    },
+    {
+      "page": 54,
+      "name": "Asteroid City - Kodak Vision T200",
+      "wbSummary": "4700K A7-G3",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "S-log2 or S-log3",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "ITU709Matrix",
+        "saturation": "+32",
+        "colorPhase": "+4",
+        "colorDepth": {
+          "R": "+7",
+          "G": "+7",
+          "B": "+7",
+          "C": "+7",
+          "M": "+5",
+          "Y": "+3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4700 K A7-G3"
+      ],
+      "notes": [
+        "! Turn Off Gamma Assist !"
+      ],
+      "id": "asteroid-city-kodak-vision-t200",
+      "image": "assets/recipes/asteroid-city-kodak-vision-t200.jpg",
+      "bw": false
+    },
+    {
+      "page": 55,
+      "name": "Ayon 200",
+      "wbSummary": "8000K A7-G5.5",
+      "settings": {
+        "blackLevel": "-12",
+        "gamma": "Cine4",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "S-Gamut3",
+        "saturation": "+32",
+        "colorPhase": "+7",
+        "colorDepth": {
+          "R": "+4",
+          "G": "+5",
+          "B": "0",
+          "C": "0",
+          "M": "-3",
+          "Y": "+7"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "8000K A7-G5 .5"
+      ],
+      "notes": [],
+      "id": "ayon-200",
+      "image": "assets/recipes/ayon-200.jpg",
+      "bw": false
+    },
+    {
+      "page": 56,
+      "name": "Phenix Harman",
+      "wbSummary": "8000K B7-G0.5",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "Still",
+        "blackGamma": "Wide -7",
+        "knee": "Manual 105% +5",
+        "colorMode": "S-Cinetone",
+        "saturation": "+20",
+        "colorPhase": "+1",
+        "colorDepth": {
+          "R": "+5",
+          "G": "+7",
+          "B": "+2",
+          "C": "+5",
+          "M": "+5",
+          "Y": "+5"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "8000K A7-G0.5"
+      ],
+      "notes": [],
+      "id": "phenix-harman",
+      "image": "assets/recipes/phenix-harman.jpg",
+      "bw": false
+    },
+    {
+      "page": 57,
+      "name": "Phenomena",
+      "wbSummary": "4300K A7-M1.75",
+      "settings": {
+        "blackLevel": "+7",
+        "gamma": "Still",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 75% +5",
+        "colorMode": "Pro",
+        "saturation": "+25",
+        "colorPhase": "+2",
+        "colorDepth": {
+          "R": "+4",
+          "G": "+7",
+          "B": "+7",
+          "C": "+7",
+          "M": "+5",
+          "Y": "+4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4300K A7-M1.75"
+      ],
+      "notes": [],
+      "id": "phenomena",
+      "image": "assets/recipes/phenomena.jpg",
+      "bw": false
+    },
+    {
+      "page": 58,
+      "name": "Crimson",
+      "wbSummary": "4300K A7-M3",
+      "settings": {
+        "blackLevel": "+8",
+        "gamma": "Still",
+        "blackGamma": "Wide +7",
+        "knee": "Auto",
+        "colorMode": "S-Cinetone/Still",
+        "saturation": "+14",
+        "colorPhase": "+3",
+        "colorDepth": {
+          "R": "+1",
+          "G": "+7",
+          "B": "+3",
+          "C": "+7",
+          "M": "+5",
+          "Y": "+3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4300K A7-M3"
+      ],
+      "notes": [],
+      "id": "crimson",
+      "image": "assets/recipes/crimson.jpg",
+      "bw": false
+    },
+    {
+      "page": 59,
+      "name": "Acidnom",
+      "wbSummary": "3100K A7-M1.75",
+      "settings": {
+        "blackLevel": "-6",
+        "gamma": "Still",
+        "blackGamma": "Wide +7",
+        "knee": "Auto",
+        "colorMode": "Still",
+        "saturation": "+32",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "+3",
+          "G": "+7",
+          "B": "+2",
+          "C": "+7",
+          "M": "-5",
+          "Y": "-4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3100K A7-M1.75"
+      ],
+      "notes": [],
+      "id": "acidnom",
+      "image": "assets/recipes/acidnom.jpg",
+      "bw": false
+    },
+    {
+      "page": 60,
+      "name": "Estra 500",
+      "wbSummary": "8600K B2.5-M3",
+      "settings": {
+        "blackLevel": "-5",
+        "gamma": "Cine4",
+        "blackGamma": "Middle-7",
+        "knee": "Manual 82.5% +4",
+        "colorMode": "Still",
+        "saturation": "-8",
+        "colorPhase": "+1",
+        "colorDepth": {
+          "R": "-6",
+          "G": "+7",
+          "B": "+1",
+          "C": "+3",
+          "M": "+7",
+          "Y": "+5"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "8600K B2.5-M3"
+      ],
+      "notes": [],
+      "id": "estra-500",
+      "image": "assets/recipes/estra-500.jpg",
+      "bw": false
+    },
+    {
+      "page": 61,
+      "name": "Arista Edu 100",
+      "wbSummary": "5500K",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "S-Cinetone",
+        "blackGamma": "Narrow-7",
+        "knee": "Manual 75+2",
+        "colorMode": "Black&White",
+        "saturation": "+28",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "-3",
+          "G": "+4",
+          "B": "+3",
+          "C": "+3",
+          "M": "+3",
+          "Y": "+2"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "5500K"
+      ],
+      "notes": [],
+      "id": "arista-edu-100",
+      "image": "assets/recipes/arista-edu-100.jpg",
+      "bw": true
+    },
+    {
+      "page": 62,
+      "name": "X-Tarr",
+      "wbSummary": "5500K",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "Still",
+        "blackGamma": "Wide -7",
+        "knee": "Manual 75% +5",
+        "colorMode": "Black&White",
+        "saturation": "+32",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "+4",
+          "G": "+7",
+          "B": "+7",
+          "C": "+7",
+          "M": "+7",
+          "Y": "+7"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "5500K"
+      ],
+      "notes": [],
+      "id": "x-tarr",
+      "image": "assets/recipes/x-tarr.jpg",
+      "bw": true
+    },
+    {
+      "page": 63,
+      "name": "MagicSpice",
+      "wbSummary": "7000K B4-M1.25",
+      "settings": {
+        "blackLevel": "-12",
+        "gamma": "Movie",
+        "blackGamma": "Middle -7",
+        "knee": "Manual 75% +5",
+        "colorMode": "Still",
+        "saturation": "+17",
+        "colorPhase": "-1",
+        "colorDepth": {
+          "R": "-4",
+          "G": "+7",
+          "B": "-3",
+          "C": "-3",
+          "M": "-5",
+          "Y": "+4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "7000K B4-M1.25"
+      ],
+      "notes": [],
+      "id": "magicspice",
+      "image": "assets/recipes/magicspice.jpg",
+      "bw": false
+    },
+    {
+      "page": 64,
+      "name": "Amarelo 30D",
+      "wbSummary": "4200K A7-G0.25",
+      "settings": {
+        "blackLevel": "+4",
+        "gamma": "Still",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 75% +5",
+        "colorMode": "Still",
+        "saturation": "+20",
+        "colorPhase": "-4",
+        "colorDepth": {
+          "R": "-1",
+          "G": "+7",
+          "B": "0",
+          "C": "-3",
+          "M": "-4",
+          "Y": "-4"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "4200K A7-G0.25"
+      ],
+      "notes": [],
+      "id": "amarelo-30d",
+      "image": "assets/recipes/amarelo-30d.jpg",
+      "bw": false
+    },
+    {
+      "page": 65,
+      "name": "GAF 500",
+      "wbSummary": "5800K A7-M0.75",
+      "settings": {
+        "blackLevel": "+3",
+        "gamma": "Still",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 75% +4",
+        "colorMode": "Still",
+        "saturation": "+14",
+        "colorPhase": "0",
+        "colorDepth": {
+          "R": "+3",
+          "G": "+5",
+          "B": "-3",
+          "C": "-3",
+          "M": "-3",
+          "Y": "+3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "5800K A7-M0.75"
+      ],
+      "notes": [],
+      "id": "gaf-500",
+      "image": "assets/recipes/gaf-500.jpg",
+      "bw": false
+    },
+    {
+      "page": 66,
+      "name": "Vespera - Nightime",
+      "wbSummary": "2500K B4-G2.5",
+      "settings": {
+        "blackLevel": "-5",
+        "gamma": "Cine4",
+        "blackGamma": "Middle-7",
+        "knee": "Manual 82.5% +4",
+        "colorMode": "Still",
+        "saturation": "-10",
+        "colorPhase": "+7",
+        "colorDepth": {
+          "R": "-6",
+          "G": "+7",
+          "B": "+1",
+          "C": "+3",
+          "M": "+7",
+          "Y": "+5"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "2500K B4-G2.5"
+      ],
+      "notes": [],
+      "id": "vespera-nightime",
+      "image": "assets/recipes/vespera-nightime.jpg",
+      "bw": false
+    },
+    {
+      "page": 67,
+      "name": "Veniliqum - Night",
+      "wbSummary": "3000K A7-G7",
+      "settings": {
+        "blackLevel": "-15",
+        "gamma": "Still",
+        "blackGamma": "Wide +7",
+        "knee": "Manual 105% +4",
+        "colorMode": "S-Gamut3.Cine",
+        "saturation": "+32",
+        "colorPhase": "+5",
+        "colorDepth": {
+          "R": "+5",
+          "G": "-1",
+          "B": "+2",
+          "C": "+5",
+          "M": "+5",
+          "Y": "+3"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "3000K A7-G7"
+      ],
+      "notes": [],
+      "id": "veniliqum-night",
+      "image": "assets/recipes/veniliqum-night.jpg",
+      "bw": false
+    },
+    {
+      "page": 68,
+      "name": "Gold Luxe - Nighttime",
+      "wbSummary": "5500K A7-M0.75",
+      "settings": {
+        "blackLevel": "+2",
+        "gamma": "Still",
+        "blackGamma": "Narrow -7",
+        "knee": "Manual 75% +4",
+        "colorMode": "S-Gamut3.Cine",
+        "saturation": "+18",
+        "colorPhase": "+7",
+        "colorDepth": {
+          "R": "+5",
+          "G": "-1",
+          "B": "+2",
+          "C": "+5",
+          "M": "+5",
+          "Y": "-5"
+        },
+        "detail": {
+          "level": "0",
+          "mode": "Manual",
+          "vhBalance": "+2",
+          "bwBalance": "Type 3",
+          "limit": "7",
+          "crispening": "7",
+          "hiLightDetail": "4"
+        }
+      },
+      "whiteBalanceBlock": [
+        "Kelvin Color Filter",
+        "5500K A7-M0.75"
+      ],
+      "notes": [],
+      "id": "gold-luxe-nighttime",
+      "image": "assets/recipes/gold-luxe-nighttime.jpg",
+      "bw": false
+    }
+  ]
+}

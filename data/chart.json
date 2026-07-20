@@ -1,0 +1,331 @@
+{
+  "color": [
+    {
+      "name": "Phoenix Harman",
+      "x": 0.984,
+      "y": 0.031
+    },
+    {
+      "name": "Veniliqum",
+      "x": 0.979,
+      "y": 0.06
+    },
+    {
+      "name": "Vektro 100",
+      "x": 0.479,
+      "y": 0.096
+    },
+    {
+      "name": "Velvia Pro",
+      "x": 0.713,
+      "y": 0.096
+    },
+    {
+      "name": "Fuji Fortia 50",
+      "x": 0.882,
+      "y": 0.088
+    },
+    {
+      "name": "RedScale Ultra",
+      "x": 0.993,
+      "y": 0.124
+    },
+    {
+      "name": "Magic Spice",
+      "x": 0.768,
+      "y": 0.144
+    },
+    {
+      "name": "Leicachrome",
+      "x": 0.804,
+      "y": 0.198
+    },
+    {
+      "name": "Ayon 200",
+      "x": 0.979,
+      "y": 0.199
+    },
+    {
+      "name": "Ektachrome",
+      "x": 0.661,
+      "y": 0.211
+    },
+    {
+      "name": "Oktar",
+      "x": 0.882,
+      "y": 0.211
+    },
+    {
+      "name": "Rose Spectra",
+      "x": 0.746,
+      "y": 0.242
+    },
+    {
+      "name": "Gold Luxe",
+      "x": 0.842,
+      "y": 0.24
+    },
+    {
+      "name": "Classic Chrome",
+      "x": 0.239,
+      "y": 0.276
+    },
+    {
+      "name": "Kodak Ultra Max 400",
+      "x": 0.686,
+      "y": 0.288
+    },
+    {
+      "name": "Amarelo 30D",
+      "x": 0.804,
+      "y": 0.295
+    },
+    {
+      "name": "Phenomena",
+      "x": 0.979,
+      "y": 0.293
+    },
+    {
+      "name": "Sony Provia RX",
+      "x": 0.479,
+      "y": 0.303
+    },
+    {
+      "name": "Agfa Precisa",
+      "x": 0.897,
+      "y": 0.31
+    },
+    {
+      "name": "Kodachrome v1",
+      "x": 0.768,
+      "y": 0.314
+    },
+    {
+      "name": "Kodak Portra 160",
+      "x": 0.535,
+      "y": 0.33
+    },
+    {
+      "name": "CineChrome",
+      "x": 0.732,
+      "y": 0.335
+    },
+    {
+      "name": "Fuji Provia",
+      "x": 0.444,
+      "y": 0.343
+    },
+    {
+      "name": "Acidnom",
+      "x": 0.839,
+      "y": 0.344
+    },
+    {
+      "name": "Kodak Portra 400",
+      "x": 0.681,
+      "y": 0.365
+    },
+    {
+      "name": "Kodak Gold 200",
+      "x": 0.832,
+      "y": 0.369
+    },
+    {
+      "name": "Fuji400H",
+      "x": 0.57,
+      "y": 0.38
+    },
+    {
+      "name": "GAF 500",
+      "x": 0.973,
+      "y": 0.391
+    },
+    {
+      "name": "Kodak Color Plus 200",
+      "x": 0.741,
+      "y": 0.401
+    },
+    {
+      "name": "Nostalgic Neg",
+      "x": 0.866,
+      "y": 0.402
+    },
+    {
+      "name": "Cinestill 50D",
+      "x": 0.57,
+      "y": 0.414
+    },
+    {
+      "name": "Senova Light",
+      "x": 0.652,
+      "y": 0.42
+    },
+    {
+      "name": "DreamNeg",
+      "x": 0.815,
+      "y": 0.432
+    },
+    {
+      "name": "Astia",
+      "x": 0.448,
+      "y": 0.441
+    },
+    {
+      "name": "EvPro+",
+      "x": 0.626,
+      "y": 0.458
+    },
+    {
+      "name": "Ektar 100",
+      "x": 0.779,
+      "y": 0.459
+    },
+    {
+      "name": "Crimson",
+      "x": 0.862,
+      "y": 0.478
+    },
+    {
+      "name": "Sony Classic Negative",
+      "x": 0.357,
+      "y": 0.506
+    },
+    {
+      "name": "Classic Cinema",
+      "x": 0.622,
+      "y": 0.518
+    },
+    {
+      "name": "Kodachrome v2",
+      "x": 0.832,
+      "y": 0.521
+    },
+    {
+      "name": "Estra 500",
+      "x": 0.277,
+      "y": 0.55
+    },
+    {
+      "name": "Pro Color",
+      "x": 0.868,
+      "y": 0.572
+    },
+    {
+      "name": "Zetra 100",
+      "x": 0.581,
+      "y": 0.587
+    },
+    {
+      "name": "Zero Mute",
+      "x": 0.366,
+      "y": 0.597
+    },
+    {
+      "name": "Sony Eterna",
+      "x": 0.746,
+      "y": 0.597
+    },
+    {
+      "name": "Cinestill 800",
+      "x": 0.475,
+      "y": 0.607
+    },
+    {
+      "name": "Fuji Eterna",
+      "x": 0.287,
+      "y": 0.689
+    },
+    {
+      "name": "Kodak Portra 800",
+      "x": 0.993,
+      "y": 0.893
+    },
+    {
+      "name": "Asteroid City",
+      "x": 0.982,
+      "y": 0.933
+    }
+  ],
+  "bw": [
+    {
+      "name": "X-Tarr",
+      "x": 0.942,
+      "y": 0.038
+    },
+    {
+      "name": "Cinestill X",
+      "x": 0.861,
+      "y": 0.08
+    },
+    {
+      "name": "Arista Edu 100",
+      "x": 0.783,
+      "y": 0.125
+    },
+    {
+      "name": "T-Max 100",
+      "x": 0.657,
+      "y": 0.163
+    },
+    {
+      "name": "MidRed Infra",
+      "x": 0.845,
+      "y": 0.157
+    },
+    {
+      "name": "Kodak Tri-X 1600",
+      "x": 0.839,
+      "y": 0.265
+    },
+    {
+      "name": "Acros X-G",
+      "x": 0.636,
+      "y": 0.308
+    },
+    {
+      "name": "Acros X-R",
+      "x": 0.565,
+      "y": 0.34
+    },
+    {
+      "name": "Acros X",
+      "x": 0.424,
+      "y": 0.388
+    },
+    {
+      "name": "Acros X-Ye",
+      "x": 0.513,
+      "y": 0.387
+    },
+    {
+      "name": "Kosmo Pan",
+      "x": 0.267,
+      "y": 0.462
+    },
+    {
+      "name": "Chroma Fade",
+      "x": 0.372,
+      "y": 0.566
+    },
+    {
+      "name": "Delta 3200",
+      "x": 0.266,
+      "y": 0.63
+    },
+    {
+      "name": "Neo Max",
+      "x": 0.776,
+      "y": 0.722
+    },
+    {
+      "name": "Ilford HP5",
+      "x": 0.333,
+      "y": 0.772
+    },
+    {
+      "name": "Kodak Tri-X 400",
+      "x": 0.689,
+      "y": 0.897
+    }
+  ]
+}

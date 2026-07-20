@@ -1,9 +1,10 @@
-.cursor
+node_modules/
+package-lock.json
+tmp_verify/
+tmp_*.png
+*.pyc
+__pycache__/
 .DS_Store
 Thumbs.db
-*.log
-scripts/
-docs/
-data/
 page3_words.txt
-README.md
+.cursor/

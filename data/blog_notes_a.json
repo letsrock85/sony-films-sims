@@ -1,0 +1,247 @@
+{
+  "recipes": [
+    {
+      "name": "Vektro 100",
+      "film": "Original creation, no film ancestor — high contrast, cool tones, subtly balanced color",
+      "bestFor": ["street", "portrait", "documentary"],
+      "light": ["any"],
+      "mood": ["cool", "punchy", "vivid"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/vektro-100-film-recipe-sony-a6700-film-simulation"
+    },
+    {
+      "name": "Fuji Pro 400H",
+      "film": "Discontinued pro color negative (2004-2021) — cool tones, soft skin, a wedding favorite",
+      "bestFor": ["portrait", "everyday"],
+      "light": ["any"],
+      "mood": ["cool", "soft", "vivid"],
+      "tip": "Prefer warmer tones? Simply raise the temperature by 300-500 Kelvin.",
+      "sourceUrl": "https://www.veresdenialex.com/post/fuji-pro-400h-recipe-w-sony-a6700-picture-profiles"
+    },
+    {
+      "name": "EvPro+",
+      "film": "Original all-rounder profile, not based on a film stock — soft gradations, strong in low light",
+      "bestFor": ["street", "landscape", "product", "everyday"],
+      "light": ["any", "night"],
+      "mood": ["clean", "soft"],
+      "tip": "Adjust Black level to taste: around -9 in daytime, -2 at night; raise it for a faded, dreamy look.",
+      "sourceUrl": "https://www.veresdenialex.com/post/evpro-the-only-film-simulation-you-need"
+    },
+    {
+      "name": "Kodak Ektar 100",
+      "film": "Ultra-fine-grain color negative (2008) — the most saturated C-41 film, loves bright light",
+      "bestFor": ["nature", "street", "landscape"],
+      "light": ["sunny"],
+      "mood": ["vivid", "punchy", "warm"],
+      "tip": "Shines in bright light — expose correctly and the colors get richer and more vibrant.",
+      "sourceUrl": "https://www.veresdenialex.com/post/kodak-ektar-100-recipe-sony-a6700"
+    },
+    {
+      "name": "Kodak Gold V1",
+      "film": "Consumer color negative of the 80s-90s — warm, golden, the look of family albums",
+      "bestFor": ["portrait", "travel", "nature", "street", "everyday"],
+      "light": ["any"],
+      "mood": ["warm", "nostalgic"],
+      "tip": "Go hot with white balance — around 7800K with A5-G3 or A7-M1 — and expose for your subject.",
+      "sourceUrl": "https://www.veresdenialex.com/post/kodak-gold-200-italy-through-a-timeless-loo"
+    },
+    {
+      "name": "Kodak Gold V2",
+      "film": "Kodak Gold reimagined toward Vision3 200T — teal skies and golden warmth, Asteroid City vibes",
+      "bestFor": ["landscape", "street", "portrait", "everyday"],
+      "light": ["sunny", "golden-hour"],
+      "mood": ["warm", "vivid", "cinematic", "punchy"],
+      "tip": "At home in bright daylight, especially golden hour; soft contrast keeps portraits flattering.",
+      "sourceUrl": "https://www.veresdenialex.com/post/new-kodak-gold-v2-teal-n-orange-film-recipe-for-sony-a6700-freshly-baked-series"
+    },
+    {
+      "name": "Kodak Portra 800",
+      "film": "High-speed daylight color negative — fine grain, natural skin tones, thrives in low light",
+      "bestFor": ["portrait", "travel"],
+      "light": ["any"],
+      "mood": ["warm", "dreamy", "soft"],
+      "tip": "Easy to underexpose by accident — set +1 to +2 EV for clean, well-balanced shadows.",
+      "sourceUrl": "https://www.veresdenialex.com/post/kodak-portra-800-film-recipe-on-the-sony-a6700-camera"
+    },
+    {
+      "name": "Kodak Portra 400",
+      "film": "The gold-standard portrait color negative — natural skin tones, soft balanced color",
+      "bestFor": ["portrait", "street", "nature", "everyday"],
+      "light": ["any"],
+      "mood": ["warm", "soft", "clean"],
+      "tip": "Very forgiving — slight under- or overexposure won't hurt; a great pick for beginners.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sunny-day-w-kodak-portra-400-sony-film-simulation"
+    },
+    {
+      "name": "Reggie's Portra",
+      "film": "Reggie Ballesteros' take on Kodak Portra 400 — balance of film aesthetic and digital clarity",
+      "bestFor": ["street", "night", "portrait", "travel", "everyday", "documentary"],
+      "light": ["any"],
+      "mood": ["clean", "muted", "soft"],
+      "tip": "Underexpose a third to half a stop to match Fuji exposure; add a diffusion filter for a dreamier, softer look.",
+      "sourceUrl": "https://www.veresdenialex.com/post/reggies-portra-recipe-on-sony-cameras"
+    },
+    {
+      "name": "Kodak Color Plus 200",
+      "film": "Budget classic since 1972 (Kodacolor II) — fun, vibrant, gritty grain like Kodak Gold",
+      "bestFor": ["portrait", "travel", "street", "everyday"],
+      "light": ["sunny", "golden-hour"],
+      "mood": ["warm", "soft", "nostalgic"],
+      "tip": "Pairs beautifully with a black mist diffusion filter for a soft, film-like glow.",
+      "sourceUrl": "https://www.veresdenialex.com/post/it-starts-like-a-dream-kodak-color-plus-200-sony-film-simulation-recipe"
+    },
+    {
+      "name": "Kodak Ultra Max 400",
+      "film": "Consumer all-rounder negative (2007, replaced Gold 400) — the look of early-2000s snapshots",
+      "bestFor": ["portrait", "landscape", "street", "everyday"],
+      "light": ["any", "overcast"],
+      "mood": ["warm", "muted", "clean"],
+      "tip": "The author typically underexposes by 0.3-0.7 stops in daytime; skin roll-off stays nice even overexposed.",
+      "sourceUrl": "https://www.veresdenialex.com/post/kodak-ultra-max-400-film-recipe-with-sony-a6700"
+    },
+    {
+      "name": "Kodak Ektachrome",
+      "film": "Kodak slide film — rich, deep colors that famously shift with light and exposure",
+      "bestFor": ["street", "everyday"],
+      "light": ["sunny", "mixed"],
+      "mood": ["vivid", "moody", "punchy"],
+      "tip": "Expose to the right for warm, saturated color; underexposing shifts the whole image toward magenta.",
+      "sourceUrl": "https://www.veresdenialex.com/post/ektachrome-a-whole-different-world"
+    },
+    {
+      "name": "Kodachrome 64 V1",
+      "film": "Legendary slide film (1935-2009) — deep saturated color that documented an entire century",
+      "bestFor": ["street", "documentary", "travel", "nature"],
+      "light": ["sunny", "night"],
+      "mood": ["vivid", "punchy", "cool", "nostalgic"],
+      "tip": "For the vintage look, raise temperature 200-300K and nudge the color filter gently toward Blue-Magenta.",
+      "sourceUrl": "https://www.veresdenialex.com/post/kodachrome-64-recipe"
+    },
+    {
+      "name": "Kodachrome V2 (Gold)",
+      "film": "Golden Age 1950s Kodachrome — golden skin, velvet blue cast, Saul Leiter's palette",
+      "bestFor": ["portrait", "everyday", "travel"],
+      "light": ["any"],
+      "mood": ["nostalgic", "warm", "soft", "dreamy"],
+      "tip": "Uses a floating Kelvin value: run 3900K for cooler tones, up to 5000K to emphasize golden skin.",
+      "sourceUrl": "https://www.veresdenialex.com/post/kodachrome-64-film-simulation-v2-gold-version"
+    },
+    {
+      "name": "Kodachrome V3",
+      "film": "Rarer Kodachrome slides with warm tones and teal skies",
+      "bestFor": ["street", "documentary"],
+      "light": ["sunny"],
+      "mood": ["warm", "vivid", "nostalgic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-kodachrome-s-fujifilm-s-nostalgic-neg-a-complete-comparison-my-fujifilm-x-t5-kodachrome-re"
+    },
+    {
+      "name": "Kodachrome V4",
+      "film": "1976 Joel Meyerowitz-era Kodachrome — desaturated, magenta-tinted vintage look",
+      "bestFor": ["street", "documentary"],
+      "light": ["sunny"],
+      "mood": ["muted", "nostalgic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-kodachrome-s-fujifilm-s-nostalgic-neg-a-complete-comparison-my-fujifilm-x-t5-kodachrome-re"
+    },
+    {
+      "name": "Nostalgic Neg (Sony)",
+      "film": "Original recipe inspired by faded family prints — pink, orange and olive, not a film replica",
+      "bestFor": ["portrait", "everyday"],
+      "light": ["any"],
+      "mood": ["nostalgic", "warm", "soft"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/nostalgic-neg-film-simulation"
+    },
+    {
+      "name": "Fuji Nostalgic Neg",
+      "film": "Fujifilm's simulation of 1950s Kodachrome — golden skin, warm reds, dusty blue skies",
+      "bestFor": ["street", "documentary", "portrait"],
+      "light": ["any"],
+      "mood": ["nostalgic", "warm", "cinematic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-kodachrome-s-fujifilm-s-nostalgic-neg-a-complete-comparison-my-fujifilm-x-t5-kodachrome-re"
+    },
+    {
+      "name": "Leicachrome",
+      "film": "Modeled on Leica M9 CCD colors — deep, vibrant, with rumored Kodachrome kinship",
+      "bestFor": ["travel", "portrait", "street", "landscape", "everyday"],
+      "light": ["any"],
+      "mood": ["vivid", "punchy", "clean"],
+      "tip": "Underexpose slightly for velvety skies; overexpose and the blues shift toward a striking cyan.",
+      "sourceUrl": "https://www.veresdenialex.com/post/leica-like-film-simulation"
+    },
+    {
+      "name": "Classic Cinema",
+      "film": "Original recipe channeling 90s movies shot on Kodak film — warm retro feel",
+      "bestFor": ["everyday", "street"],
+      "light": ["any"],
+      "mood": ["warm", "nostalgic", "cinematic", "soft"],
+      "tip": "Set AWB with the given color filter and P mode at -0.5 EV; shift Color Phase +1/+2 if magenta skies bother you.",
+      "sourceUrl": "https://www.veresdenialex.com/post/classic-cinema-film-simulation-freshly-baked-series"
+    },
+    {
+      "name": "Classic Chrome",
+      "film": "Fuji's homage to old photojournalism chrome films — muted tones, relaxed cyan-leaning blues",
+      "bestFor": ["street", "documentary", "portrait", "travel", "landscape"],
+      "light": ["any"],
+      "mood": ["muted", "nostalgic", "cinematic", "clean"],
+      "tip": "Try early morning or late afternoon light to bring out its nostalgic, cinematic feel.",
+      "sourceUrl": "https://www.veresdenialex.com/post/can-you-get-the-classic-chrome-recipe-on-sony-cameras"
+    },
+    {
+      "name": "Velvia",
+      "film": "Fuji slide film (1990) — vivid saturation, deep contrast, the landscape legend",
+      "bestFor": ["landscape", "nature"],
+      "light": ["sunny"],
+      "mood": ["vivid", "punchy"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/velvia-film-simulation-on-sony-cameras"
+    },
+    {
+      "name": "Fuji Fortia 50",
+      "film": "Limited-run Fuji slide film famed for extreme, deep vivid color",
+      "bestFor": ["street"],
+      "light": ["any"],
+      "mood": ["vivid", "punchy"],
+      "tip": "Made for experimenting — over- or underexpose and shift temperature for wild color shifts.",
+      "sourceUrl": "https://www.veresdenialex.com/post/fuji-fortia-50-film-simulation"
+    },
+    {
+      "name": "Provia",
+      "film": "Fuji color reversal film — fine grain, vivid yet balanced color reproduction",
+      "bestFor": ["street", "landscape", "nature", "documentary", "everyday"],
+      "light": ["any"],
+      "mood": ["vivid", "clean", "cool"],
+      "tip": "Very forgiving — the author overexposes +0.5 to +1 stop; around 4500K is the temperature sweet spot.",
+      "sourceUrl": "https://www.veresdenialex.com/post/freshly-baked-series-provia-sony-film-simulation-recipe"
+    },
+    {
+      "name": "Acros X",
+      "film": "Fuji Acros B&W film recreated on Sony — with X/Y/R/G filter variants, nearly indistinguishable",
+      "bestFor": ["street", "documentary"],
+      "light": ["any"],
+      "mood": ["moody", "clean"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/acros-x-sony-film-simulation-black-n-white-recipes-freshly-baked-series"
+    },
+    {
+      "name": "Sony Classic Negative",
+      "film": "Sony-only twist on Fuji's Classic Neg — warm nostalgia, faded shadows, a focus on reds",
+      "bestFor": ["street", "everyday", "portrait"],
+      "light": ["any", "indoor"],
+      "mood": ["nostalgic", "warm", "moody"],
+      "tip": "Indoors it can run too warm — drop the temperature by 700-1500K to balance ambient light.",
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-classic-negative-film-simulation-a-unique-perspective"
+    },
+    {
+      "name": "Reala Ace",
+      "film": "Fuji simulation of Fujicolor Superia Reala 100 — natural, restrained, minimal-edit look",
+      "bestFor": ["portrait", "everyday"],
+      "light": ["any"],
+      "mood": ["clean", "soft", "cinematic"],
+      "tip": null,
+      "sourceUrl": "https://www.veresdenialex.com/post/fuji-s-reala-ace-on-sony-cameras"
+    }
+  ]
+}

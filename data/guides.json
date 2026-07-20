@@ -1,0 +1,141 @@
+{
+  "cheatsheet": [
+    {
+      "q": "The one rule",
+      "a": "Every recipe uses a fixed Kelvin - set it once and leave it. Never AWB: it re-decides color on every shot."
+    },
+    {
+      "q": "Image too cold / too warm",
+      "a": "Nudge the color filter: toward Amber to warm up, toward Blue to cool down. 2 filter points = roughly 1000K."
+    },
+    {
+      "q": "Indoor bulbs",
+      "a": "Drop the recipe's Kelvin by 1000-2500K, or shift the filter 2-6 toward Blue."
+    },
+    {
+      "q": "Fluorescent light",
+      "a": "Add 500-1000K plus 1-2 toward Magenta to kill the green cast."
+    },
+    {
+      "q": "Overcast or shade",
+      "a": "Add 500-1000K, or shift 2 toward Amber, to keep the recipe's warmth."
+    },
+    {
+      "q": "Night streets",
+      "a": "Daylight recipes turn orange under lamps. Switch to a night recipe: CineStill 800T, Vespera, Veniliqum or Gold Luxe."
+    },
+    {
+      "q": "Exposure",
+      "a": "Underexpose 0.3-0.5 stops to protect highlights - blown highlights push skin toward green. S-Log recipes want +1 stop instead."
+    },
+    {
+      "q": "Fast switching",
+      "a": "Save full setups (recipe + WB + exposure) to Memory Recall 1-3, and map Picture Profile and White Balance to custom buttons."
+    },
+    {
+      "q": "Keep the RAW safe",
+      "a": "Shoot RAW+JPEG. Recipes bake into the JPEG only - the RAW stays untouched as a backup."
+    }
+  ],
+  "guides": [
+    {
+      "id": "white-balance",
+      "title": "White Balance for film simulations",
+      "essence": "Recipes are daylight-balanced (~5500K), so use fixed Kelvin + color filter instead of AWB for consistent color. When light changes, add small offsets on top of the base recipe rather than chasing neutral - the intentional color cast IS the look. Adjust by eye when skin tones or vibe feel off.",
+      "steps": [
+        "Outdoors in daylight: shoot the recipe as published, no changes",
+        "Incandescent bulbs: drop 1000-2500K or shift 2-6 toward Blue",
+        "Tungsten studio light: drop ~2000K or shift 4 toward Blue",
+        "Fluorescent: add 500-1000K (or 2A) plus 1-2 Magenta to kill green",
+        "Indoor natural light: drop ~300K or 1 toward Blue",
+        "Overcast/shade: add 500-1000K or shift 2 toward Amber",
+        "Kelvin maxed out? 2 points on the Blue-Amber filter ~ 1000K",
+        "Sodium-vapor night: use a cool recipe (CineStill 800T) or a low-saturation AWB recipe"
+      ],
+      "sourceUrl": "https://www.veresdenialex.com/post/adjusting-film-simulation-for-any-light-source"
+    },
+    {
+      "id": "camera-setup",
+      "title": "Sony setup: custom buttons, formats, Memory Recall",
+      "essence": "Map White Balance, Picture Profile, ISO and focus to custom buttons so recipe tweaks take seconds in the field. Shoot RAW+JPEG (or RAW+HEIF) since recipes bake into JPEG/HEIF only, and store full recipe + WB + exposure combos in Memory Recall slots to swap looks instantly.",
+      "steps": [
+        "Assign custom buttons: White Balance, Picture Profile, ISO, focus area",
+        "Shoot RAW+JPEG or RAW+HEIF; the RAW stays untouched as backup",
+        "Enter the recipe in a PP slot, then set its Kelvin + color filter",
+        "Save the whole setup to Memory Recall (slots 1-3 are permanent; MR slots vanish on card format)",
+        "Underexpose 0.3-0.5 stops to protect highlights; S-Log-based recipes need +1 stop instead",
+        "Recipe looks off? Check white balance first, then adjust by eye",
+        "New light source: add/subtract the Kelvin difference from 5500K to the recipe",
+        "Kelvin scale maxed: ~1.75 steps on the Blue-Amber filter ~ 1000K"
+      ],
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-camera-settings-cheat-sheet-custom-buttons-white-balance-settings-more"
+    },
+    {
+      "id": "picture-profiles",
+      "title": "Picture Profiles and the PP1-PP11 slots",
+      "essence": "The Picture Profile menu (Exposure/Color > Color/Tone) is the deeper tool for film recipes: gamma, black level, black gamma, knee, color mode, saturation, color phase, per-channel color depth, and detail. Factory mapping: PP1-PP6 ready-to-use gammas (Movie, Still, ITU709, Cine1/2), PP7 S-Log2, PP8-PP9 S-Log3, PP10 HLG, PP11 S-Cinetone - but any slot can hold any custom recipe.",
+      "steps": [
+        "Pick gamma for contrast: Movie/Still = punchy, Cine1-4 = soft filmic, S-Log = flat/faded base",
+        "Set Black Level: lift for fade on contrasty gammas, drop to -10/-15 on Cine gammas",
+        "Refine shadows with Black Gamma range and level",
+        "Set Knee to ~75-80% with slope +1/+2 for soft highlight roll-off",
+        "Choose a Color Mode that fits the look, then set saturation",
+        "Use Color Phase to rotate all hues, Color Depth to darken/brighten each channel",
+        "Set Detail to -7 for a soft, organic, analog sharpness",
+        "Save the slot and recall it via your custom PP button"
+      ],
+      "sourceUrl": "https://www.veresdenialex.com/post/master-sony-picture-profiles"
+    },
+    {
+      "id": "color-calibrating",
+      "title": "Calibrate any Sony body to the recipes",
+      "essence": "All recipes are calibrated on the a6700; older bodies (a7III era) lean cold/magenta with lower saturation. Correct on top of the recipe using Kelvin, color filter, and Color Phase. Reds on old sensors often cannot be fully fixed - sacrifice reds to keep the rest of the palette right.",
+      "steps": [
+        "a7RV, ZV-E1, a7CII: virtually identical to a6700; at most a tiny Amber/Green nudge",
+        "a7CII and RX100 VI/VII: raise Kelvin 100-200 or push filter ~0.5 toward Amber",
+        "a7III: Color Phase +4 and filter A3-G1; accept slightly pink reds",
+        "a7SIII: bump saturation; raise Color Phase +1/+2 if yellows go green",
+        "Underexpose rather than overexpose: blown highlights push yellows and skin toward green",
+        "Use Color Depth to deepen colors and avoid color clipping in highlights"
+      ],
+      "sourceUrl": "https://www.veresdenialex.com/post/color-calibrating-all-your-sony-cameras-with-in-camera-tools-ultimate-guide-sony-a7iii-a7cii"
+    },
+    {
+      "id": "color-matching",
+      "title": "Color-match multiple Sony cameras",
+      "essence": "Pick your newest body as the color reference, identify each camera's dominant cast (warm vs cold, magenta vs green), then counter it with Kelvin, color filter and Color Phase added on top of the recipe. Work in small increments, judge skin tones first, and eyeball until it feels right.",
+      "steps": [
+        "Choose the newest sensor as reference (recipes assume the a6700)",
+        "Diagnose the cast by checking reds, yellows, greens and blues",
+        "Cold/magenta cast: raise Kelvin, filter +G0.25-0.5, Color Phase +2",
+        "Warm/yellow-green cast: lower Kelvin ~300, push filter toward Magenta",
+        "Skin too pink: Phase -1/-2; too orange or green: Phase +1/+2",
+        "Adjust in 100-200K and 0.25-filter increments; recheck frequently, don't over-correct"
+      ],
+      "sourceUrl": "https://www.veresdenialex.com/post/color-matching-all-your-sony-cameras"
+    },
+    {
+      "id": "s-log",
+      "title": "S-Log: when and how to shoot it",
+      "essence": "S-Log maximizes dynamic range for grading: use S-Log2 on 8-bit bodies (overexpose +1.5-2 stops), S-Log3 on 10-bit bodies (expose normally: white card ~61%, skin ~52%). Stay at base ISO, fix white balance manually, and skip Log entirely for fast turnarounds, low light, or run-and-gun.",
+      "steps": [
+        "8-bit camera: S-Log2 (PP7), overexpose +1.5-2 stops, skin ~55-60% IRE",
+        "10-bit camera: S-Log3 (PP8/PP9), expose to Sony's normal levels",
+        "Stay at base ISO (~640-800); never use Auto ISO in Log",
+        "Set a fixed custom white balance; flat footage magnifies WB drift",
+        "Control exposure outdoors with ND filters, not aperture compromises",
+        "Judge exposure with histogram + zebras (~94% highlights, ~70% skin)",
+        "Protect highlights first; lifting shadows beats recovering clipped skies",
+        "Skip Log for quick delivery, dim scenes, or fast-changing light"
+      ],
+      "sourceUrl": "https://www.veresdenialex.com/post/s-log-explained-what-it-is-and-how-to-shoot-with-log"
+    },
+    {
+      "id": "creative-look-vs-picture-profile",
+      "title": "Creative Look vs Picture Profile",
+      "essence": "Creative Looks are quick 10-slot JPEG styles (contrast, highlights, shadows, fade, saturation, sharpness, clarity + a basic WB filter) - pick them for convenience, beginners, video-fast workflows, and the unique FL/IN/SH/VV2 color modes. Picture Profiles add black level, gamma, knee, color modes, Color Phase and per-channel Color Depth - pick them for accurate or complex film emulation, better highlight roll-off and skin tones. RAW files are unaffected by Creative Looks; PP gammas do slightly affect RAW brightness.",
+      "steps": [],
+      "sourceUrl": "https://www.veresdenialex.com/post/sony-creative-look-vs-picture-profile-for-film-emulations"
+    }
+  ]
+}

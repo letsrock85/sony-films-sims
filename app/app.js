@@ -176,11 +176,17 @@ function chipRow(group, title, defs) {
   </div>`;
 }
 
+const swatchStrip = (r, cls) => (r.swatches && r.swatches.length
+  ? `<span class="${cls}" aria-hidden="true">${r.swatches.map((c) =>
+      `<i style="background:${esc(c)}"></i>`).join("")}</span>`
+  : "");
+
 function pickCard(r, i) {
   const kind = r.kind === "cl" ? "CL" : (r.bw ? "B&W" : "PP");
   const vibe = r.film || "";
   return `<a class="pick" href="#/r/${esc(r.id)}" style="--i:${i}">
     <img src="${esc(r.image || "")}" alt="" loading="eager">
+    ${swatchStrip(r, "pswatch")}
     <span class="pmeta">
       <span class="pname">${esc(r.name)} <em>${esc(kind)}</em></span>
       <span class="pvibe">${esc(vibe)}</span>
@@ -298,7 +304,10 @@ function pageDetail(id) {
     </div>
     <div class="dbody">
       <div class="dmeta">
-        ${r.image ? `<img src="${esc(r.image)}" alt="${esc(r.name)}">` : ""}
+        ${r.image ? `<button type="button" class="dimgbtn" id="dimg" aria-label="Expand sample photo">
+          <img src="${esc(r.image)}" alt="${esc(r.name)}">
+        </button>` : ""}
+        ${swatchStrip(r, "dswatch")}
         <h1>${esc(r.name)}</h1>
         <p class="sub">${r.kind === "cl" ? "Creative Look" : "Picture Profile"}${r.bw ? " · B&W" : ""}${used ? " · " + esc(used) : ""}</p>
         ${r.film ? `<p class="filmline">${esc(r.film)}</p>` : ""}
@@ -337,6 +346,30 @@ function pageDetail(id) {
     e.target.classList.toggle("on", on);
     e.target.textContent = on ? "Saved" : "Save";
   });
+
+  /* tap photo to see it uncropped; tap anywhere (or Esc) to put it away */
+  const dimg = view.querySelector("#dimg");
+  if (dimg) {
+    dimg.addEventListener("click", (e) => {
+      e.stopPropagation();
+      openLightbox(r.image, r.name);
+    });
+  }
+}
+
+function openLightbox(src, name) {
+  if (document.querySelector(".lightbox")) return;
+  const box = document.createElement("div");
+  box.className = "lightbox";
+  box.innerHTML = `<img src="${esc(src)}" alt="${esc(name)}">`;
+  const close = () => {
+    box.remove();
+    removeEventListener("keydown", onKey);
+  };
+  const onKey = (e) => { if (e.key === "Escape") close(); };
+  box.addEventListener("click", close);
+  addEventListener("keydown", onKey);
+  document.body.appendChild(box);
 }
 
 /* ---------- map / guides / saved ---------- */
