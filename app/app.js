@@ -5,6 +5,13 @@
 
 const view = document.getElementById("view");
 const tabs = document.getElementById("tabs");
+const topbar = document.querySelector(".bar");
+const brand = document.querySelector(".brand");
+const searchOpen = document.getElementById("search-open");
+const searchForm = document.getElementById("search-form");
+const searchInput = document.getElementById("search-input");
+const searchClose = document.getElementById("search-close");
+const searchResults = document.getElementById("search-results");
 let DB = null;
 
 const store = {
@@ -241,6 +248,107 @@ function pagePick() {
   </section>`);
 
   bindChips(view);
+}
+
+/* ---------- global recipe search ---------- */
+
+function searchMatches(query) {
+  const words = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  if (!words.length) return [];
+  return DB.recipes
+    .map((r) => {
+      const hay = [
+        r.name, r.film, r.kind,
+        ...(r.tags?.bestFor || []), ...(r.tags?.light || []), ...(r.tags?.mood || []),
+      ].join(" ").toLowerCase();
+      const score = words.reduce((sum, word) => {
+        if (r.name.toLowerCase() === query.toLowerCase().trim()) return sum + 100;
+        if (r.name.toLowerCase().startsWith(word)) return sum + 30;
+        if (r.name.toLowerCase().includes(word)) return sum + 20;
+        return sum + (hay.includes(word) ? 4 : -100);
+      }, 0);
+      return { r, score };
+    })
+    .filter(({ score }) => score >= 0)
+    .sort((a, b) => b.score - a.score || a.r.name.localeCompare(b.r.name))
+    .slice(0, 8)
+    .map(({ r }) => r);
+}
+
+function paintSearchResults() {
+  const query = searchInput.value.trim();
+  const matches = searchMatches(query);
+  searchResults.innerHTML = query
+    ? (matches.length
+      ? matches.map((r) => `<a role="option" href="#/r/${esc(r.id)}">
+          <strong>${esc(r.name)}</strong>
+          <span>${r.kind === "cl" ? "Creative Look" : "Picture Profile"}${r.film ? ` · ${esc(r.film)}` : ""}</span>
+        </a>`).join("")
+      : `<p>No simulation matches “${esc(query)}”.</p>`)
+    : `<p>Type a film name, mood, light, or subject.</p>`;
+  searchResults.hidden = false;
+}
+
+function closeSearch({ restoreFocus = false } = {}) {
+  topbar.classList.remove("searching");
+  searchForm.hidden = true;
+  searchResults.hidden = true;
+  for (const element of [brand, tabs, searchOpen]) element.inert = false;
+  view.inert = false;
+  searchOpen.setAttribute("aria-expanded", "false");
+  searchInput.setAttribute("aria-expanded", "false");
+  if (restoreFocus) searchOpen.focus();
+}
+
+function setupSearch() {
+  searchOpen.addEventListener("click", () => {
+    topbar.classList.add("searching");
+    searchForm.hidden = false;
+    searchOpen.setAttribute("aria-expanded", "true");
+    searchInput.setAttribute("aria-expanded", "true");
+    for (const element of [brand, tabs, searchOpen]) element.inert = true;
+    view.inert = true;
+    paintSearchResults();
+    requestAnimationFrame(() => searchInput.focus());
+  });
+  searchClose.addEventListener("click", () => closeSearch({ restoreFocus: true }));
+  searchInput.addEventListener("input", paintSearchResults);
+  searchInput.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowDown") {
+      const first = searchResults.querySelector("a");
+      if (first) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+  });
+  searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const first = searchResults.querySelector("a");
+    if (first) first.click();
+  });
+  searchResults.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeSearch();
+  });
+  searchResults.addEventListener("keydown", (event) => {
+    const current = event.target.closest("a");
+    if (!current || !["ArrowDown", "ArrowUp"].includes(event.key)) return;
+    event.preventDefault();
+    const options = [...searchResults.querySelectorAll("a")];
+    const index = options.indexOf(current);
+    if (event.key === "ArrowDown") {
+      (options[index + 1] || options[0]).focus();
+    } else if (index > 0) {
+      options[index - 1].focus();
+    } else {
+      searchInput.focus();
+    }
+  });
+  addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && topbar.classList.contains("searching")) {
+      closeSearch({ restoreFocus: true });
+    }
+  });
 }
 
 /* ---------- detail ---------- */
@@ -530,7 +638,7 @@ addEventListener("hashchange", route);
 
 fetch("data.json")
   .then((r) => r.json())
-  .then((d) => { DB = d; route(); })
+  .then((d) => { DB = d; setupSearch(); route(); })
   .catch(() => { paint(`<p class="empty">Could not load recipe data.</p>`); });
 
 })();

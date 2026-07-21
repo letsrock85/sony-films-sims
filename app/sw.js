@@ -1,10 +1,10 @@
 /* Filmbook service worker — offline-first for the whole app */
-const VERSION = "filmbook-v13";
+const VERSION = "filmbook-v14";
 const CORE = [
   "./",
   "./index.html",
-  "./styles.css?v=13",
-  "./app.js?v=13",
+  "./styles.css?v=14",
+  "./app.js?v=14",
   "./data.json",
   "./manifest.webmanifest",
   "./assets/icon.svg",

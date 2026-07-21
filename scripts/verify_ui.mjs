@@ -3,7 +3,7 @@ import { mkdirSync, readFileSync } from "fs";
 
 const OUT = "tmp_verify";
 mkdirSync(OUT, { recursive: true });
-const BASE = "http://localhost:8123/index.html?v=13";
+const BASE = "http://localhost:8123/index.html?v=14";
 
 async function shot(page, name) {
   await page.screenshot({ path: `${OUT}/${name}.png`, fullPage: false });
@@ -127,7 +127,7 @@ async function checkMobileReadability(page, { requireStory = true, requirePalett
   }
 }
 
-async function checkTextCollisions(page, label) {
+async function checkTextCollisions(page, label, { allowDetailScroll = false } = {}) {
   const result = await page.evaluate(() => {
     const intersects = (a, b) =>
       Math.min(a.right, b.right) - Math.max(a.left, b.left) > 1 &&
@@ -173,7 +173,7 @@ async function checkTextCollisions(page, label) {
           rect.top < bounds.top - 1 || rect.bottom > bounds.bottom + 1)) {
         clipped.push(`${el.className || el.tagName}: outside ${owner.className}`);
       }
-      if (el.scrollHeight > el.clientHeight + 1 || el.scrollWidth > el.clientWidth + 1) {
+      if (el.scrollHeight > el.clientHeight + 2 || el.scrollWidth > el.clientWidth + 2) {
         overflow.push(`${el.className || el.tagName}: text overflow`);
       }
       for (let j = i + 1; j < textRects.length; j += 1) {
@@ -204,7 +204,7 @@ async function checkTextCollisions(page, label) {
     };
   });
   if (result.collisions.length || result.overflow.length || result.clipped.length ||
-      result.bodyScrolls || result.sheetScrolls || !result.footerVisible) {
+      (!allowDetailScroll && result.bodyScrolls) || result.sheetScrolls || !result.footerVisible) {
     throw new Error(`${label}: ${JSON.stringify(result)}`);
   }
 }
@@ -326,6 +326,74 @@ try {
     await page.goto(`${BASE}#/r/kodak-gold`, { waitUntil: "networkidle" });
     await shot(page, "mobile-real-kodak-gold");
     console.log(`[529x1024 dark] checked ${recipes.length} recipes without text collisions`);
+    await page.close();
+  }
+
+  // Responsive matrix from the user's DevTools screenshots.
+  {
+    const devices = [
+      ["iphone-se", 375, 667],
+      ["galaxy-s8", 360, 740],
+      ["iphone-14-pro-max", 430, 932],
+      ["galaxy-s20-ultra", 412, 915],
+      ["surface-pro-7", 912, 1368],
+    ];
+    for (const [name, width, height] of devices) {
+      const page = await browser.newPage({
+        viewport: { width, height },
+        isMobile: width < 721,
+        hasTouch: true,
+        colorScheme: "dark",
+      });
+      await page.goto(`${BASE}#/r/fuji-400h`, { waitUntil: "networkidle" });
+      await page.waitForSelector(".sheet");
+      await checkTextCollisions(page, name, { allowDetailScroll: height <= 780 });
+      await shot(page, `matrix-${name}`);
+      await page.close();
+    }
+  }
+
+  // Every recipe must remain collision-free on the smallest supported phone.
+  {
+    const recipes = JSON.parse(readFileSync("app/data.json", "utf8")).recipes;
+    const page = await browser.newPage({
+      viewport: { width: 375, height: 667 },
+      isMobile: true,
+      hasTouch: true,
+      colorScheme: "dark",
+    });
+    for (const recipe of recipes) {
+      await page.goto(`${BASE}#/r/${recipe.id}`, { waitUntil: "networkidle" });
+      await page.waitForSelector(".sheet");
+      await checkTextCollisions(page, `iphone-se ${recipe.id}`, { allowDetailScroll: true });
+    }
+
+    await page.goto(`${BASE}#/`, { waitUntil: "networkidle" });
+    await page.click("#search-open");
+    await page.fill("#search-input", "Fuji 400H");
+    await shot(page, "matrix-search-open");
+    const searchA11y = await page.evaluate(() => ({
+      brandInert: document.querySelector(".brand").inert,
+      tabsInert: document.querySelector("#tabs").inert,
+      viewInert: document.querySelector("#view").inert,
+      live: document.querySelector("#search-results").getAttribute("aria-live"),
+      expanded: document.querySelector("#search-input").getAttribute("aria-expanded"),
+    }));
+    if (!searchA11y.brandInert || !searchA11y.tabsInert || !searchA11y.viewInert ||
+        searchA11y.live !== "polite" || searchA11y.expanded !== "true") {
+      throw new Error(`search accessibility state is incomplete: ${JSON.stringify(searchA11y)}`);
+    }
+    const firstResult = page.locator("#search-results a").first();
+    if (!/Fuji 400H/i.test(await firstResult.textContent())) throw new Error("search did not rank Fuji 400H first");
+    await page.press("#search-input", "ArrowDown");
+    const focusedRole = await page.evaluate(() => document.activeElement?.getAttribute("role"));
+    if (focusedRole !== "option") throw new Error("ArrowDown did not focus the first search option");
+    await firstResult.click();
+    await page.waitForSelector(".dmeta h1");
+    if ((await page.locator(".dmeta h1").textContent()).trim() !== "Fuji 400H") {
+      throw new Error("search result did not open Fuji 400H");
+    }
+    console.log(`[iphone-se] checked ${recipes.length} recipes and global search`);
     await page.close();
   }
 

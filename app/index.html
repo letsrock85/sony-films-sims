@@ -9,23 +9,35 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icon-192.png">
-<link rel="stylesheet" href="styles.css?v=13">
+<link rel="stylesheet" href="styles.css?v=14">
 </head>
 <body>
 <a class="skip" href="#view">Skip to content</a>
 <div class="app">
   <header class="bar">
     <a class="brand" href="#/">Filmbook</a>
+    <button class="search-open" id="search-open" type="button"
+      aria-expanded="false" aria-controls="search-results">Search</button>
     <nav class="tabs" id="tabs">
       <a href="#/" data-tab="recipes">Films</a>
       <a href="#/chart" data-tab="chart">Map</a>
       <a href="#/guides" data-tab="guides">Guides</a>
       <a href="#/fav" data-tab="fav">Saved</a>
     </nav>
+    <form class="search-form" id="search-form" role="search" hidden>
+      <label for="search-input">Find a simulation</label>
+      <input id="search-input" type="search" inputmode="search"
+        autocomplete="off" placeholder="Kodak Gold, Portra, Eterna…"
+        role="combobox" aria-autocomplete="list" aria-controls="search-results"
+        aria-expanded="false">
+      <button type="button" id="search-close">Close</button>
+    </form>
   </header>
+  <div class="search-results" id="search-results" role="listbox"
+    aria-label="Film simulation matches" aria-live="polite" hidden></div>
   <main id="view" class="stage" aria-live="polite"></main>
 </div>
-<script src="app.js?v=13"></script>
+<script src="app.js?v=14"></script>
 <script>
 if ('serviceWorker' in navigator) {
   addEventListener('load', () =>
