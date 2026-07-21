@@ -9,7 +9,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icon-192.png">
-<link rel="stylesheet" href="styles.css?v=14">
+<link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
 <a class="skip" href="#view">Skip to content</a>
@@ -37,9 +37,18 @@
     aria-label="Film simulation matches" aria-live="polite" hidden></div>
   <main id="view" class="stage" aria-live="polite"></main>
 </div>
-<script src="app.js?v=14"></script>
+<script src="app.js?v=16"></script>
 <script>
 if ('serviceWorker' in navigator) {
+  /* After Coolify deploys a new sw.js, take the new shell immediately.
+     Asset versions live on styles.css?v=N / app.js?v=N inside index.html —
+     the page URL itself never needs a query string. */
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (refreshing) return;
+    refreshing = true;
+    location.reload();
+  });
   addEventListener('load', () =>
     navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
       .then((registration) => registration.update())

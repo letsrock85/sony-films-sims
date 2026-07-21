@@ -1,10 +1,10 @@
 /* Filmbook service worker — offline-first for the whole app */
-const VERSION = "filmbook-v14";
+const VERSION = "filmbook-v16";
 const CORE = [
   "./",
   "./index.html",
-  "./styles.css?v=14",
-  "./app.js?v=14",
+  "./styles.css?v=16",
+  "./app.js?v=16",
   "./data.json",
   "./manifest.webmanifest",
   "./assets/icon.svg",
@@ -41,6 +41,8 @@ self.addEventListener("fetch", (e) => {
       )
     );
   } else {
+    /* Navigation / shell / data: always prefer the live Coolify deploy.
+       Match both "/" and "/index.html" so offline fallback still works. */
     e.respondWith(
       fetch(e.request)
         .then((res) => {
@@ -48,7 +50,14 @@ self.addEventListener("fetch", (e) => {
           caches.open(VERSION).then((c) => c.put(e.request, copy));
           return res;
         })
-        .catch(() => caches.match(e.request))
+        .catch(async () => {
+          const hit = await caches.match(e.request);
+          if (hit) return hit;
+          if (e.request.mode === "navigate") {
+            return (await caches.match("./index.html")) || caches.match("./");
+          }
+          return undefined;
+        })
     );
   }
 });

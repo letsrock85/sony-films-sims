@@ -440,11 +440,15 @@ function pageDetail(id) {
     </div>
     <div class="dbody">
       <div class="dmeta">
-        ${r.image ? `<button type="button" class="dimgbtn" id="dimg" aria-label="Expand sample photo">
-          <img src="${esc(r.image)}" alt="${esc(r.name)}">
-        </button>` : ""}
-        <h1>${esc(r.name)}</h1>
-        <p class="sub">${r.kind === "cl" ? "Creative Look" : "Picture Profile"}${r.bw ? " · B&W" : ""}${used ? " · " + esc(used) : ""}</p>
+        <div class="dhead">
+          ${r.image ? `<button type="button" class="dimgbtn" id="dimg" aria-label="Expand sample photo">
+            <img src="${esc(r.image)}" alt="${esc(r.name)}">
+          </button>` : ""}
+          <div class="dtitle">
+            <h1>${esc(r.name)}</h1>
+            <p class="sub">${r.kind === "cl" ? "Creative Look" : "Picture Profile"}${r.bw ? " · B&W" : ""}${used ? " · " + esc(used) : ""}</p>
+          </div>
+        </div>
         ${r.film ? `<p class="filmline">${esc(r.film)}</p>` : ""}
         ${warns.map((w) => `<p class="warn">${esc(w)}</p>`).join("")}
         <p class="tip fieldnote">${esc(advice)}</p>
@@ -469,8 +473,10 @@ function pageDetail(id) {
         <section class="sgroup sg-${g.title.toLowerCase().replace(/\s+/g, "-")}">
           <h2>${esc(g.title)}</h2>
           ${(g.rows || []).map(([k, v]) => k === "Note"
-            ? `<div class="srow note"><span class="nv">${esc(v)}</span></div>`
-            : `<div class="srow"><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span></div>`
+            ? `<div class="srow note wide"><span class="nv">${esc(v)}</span></div>`
+            // A label+value pair that cannot fit a narrow half-column
+            // takes a full-width line instead of wrapping or clipping.
+            : `<div class="srow${String(k).length * 6.5 + String(v).length * 8 > 132 ? " wide" : ""}"><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span></div>`
           ).join("")}
           ${g.depth ? `
           <div class="depth">

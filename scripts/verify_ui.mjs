@@ -3,7 +3,7 @@ import { mkdirSync, readFileSync } from "fs";
 
 const OUT = "tmp_verify";
 mkdirSync(OUT, { recursive: true });
-const BASE = "http://localhost:8123/index.html?v=14";
+const BASE = "http://localhost:8123/";
 
 async function shot(page, name) {
   await page.screenshot({ path: `${OUT}/${name}.png`, fullPage: false });
@@ -173,7 +173,11 @@ async function checkTextCollisions(page, label, { allowDetailScroll = false } = 
           rect.top < bounds.top - 1 || rect.bottom > bounds.bottom + 1)) {
         clipped.push(`${el.className || el.tagName}: outside ${owner.className}`);
       }
-      if (el.scrollHeight > el.clientHeight + 2 || el.scrollWidth > el.clientWidth + 2) {
+      // Deliberate line-clamps (story on short phones) may hide extra lines,
+      // but nothing is allowed to overflow horizontally.
+      const clamped = getComputedStyle(el).webkitLineClamp !== "none";
+      if ((!clamped && el.scrollHeight > el.clientHeight + 2) ||
+          el.scrollWidth > el.clientWidth + 2) {
         overflow.push(`${el.className || el.tagName}: text overflow`);
       }
       for (let j = i + 1; j < textRects.length; j += 1) {
@@ -318,14 +322,18 @@ try {
       hasTouch: true,
       colorScheme: "dark",
     });
-    for (const recipe of recipes) {
-      await page.goto(`${BASE}#/r/${recipe.id}`, { waitUntil: "networkidle" });
-      await page.waitForSelector(".sheet");
-      await checkTextCollisions(page, `529x1024 ${recipe.id}`);
+    for (const [w, h] of [[529, 1024], [412, 915]]) {
+      await page.setViewportSize({ width: w, height: h });
+      for (const recipe of recipes) {
+        await page.goto(`${BASE}#/r/${recipe.id}`, { waitUntil: "networkidle" });
+        await page.waitForSelector(".sheet");
+        await checkTextCollisions(page, `${w}x${h} ${recipe.id}`);
+      }
+      console.log(`[${w}x${h} dark] checked ${recipes.length} recipes without text collisions`);
     }
+    await page.setViewportSize({ width: 529, height: 1024 });
     await page.goto(`${BASE}#/r/kodak-gold`, { waitUntil: "networkidle" });
     await shot(page, "mobile-real-kodak-gold");
-    console.log(`[529x1024 dark] checked ${recipes.length} recipes without text collisions`);
     await page.close();
   }
 
@@ -347,7 +355,7 @@ try {
       });
       await page.goto(`${BASE}#/r/fuji-400h`, { waitUntil: "networkidle" });
       await page.waitForSelector(".sheet");
-      await checkTextCollisions(page, name, { allowDetailScroll: height <= 780 });
+      await checkTextCollisions(page, name);
       await shot(page, `matrix-${name}`);
       await page.close();
     }
@@ -365,7 +373,7 @@ try {
     for (const recipe of recipes) {
       await page.goto(`${BASE}#/r/${recipe.id}`, { waitUntil: "networkidle" });
       await page.waitForSelector(".sheet");
-      await checkTextCollisions(page, `iphone-se ${recipe.id}`, { allowDetailScroll: true });
+      await checkTextCollisions(page, `iphone-se ${recipe.id}`);
     }
 
     await page.goto(`${BASE}#/`, { waitUntil: "networkidle" });
