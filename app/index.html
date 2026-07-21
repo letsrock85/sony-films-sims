@@ -9,7 +9,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icon-192.png">
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
 <a class="skip" href="#view">Skip to content</a>
@@ -25,10 +25,14 @@
   </header>
   <main id="view" class="stage" aria-live="polite"></main>
 </div>
-<script src="app.js?v=12"></script>
+<script src="app.js?v=13"></script>
 <script>
 if ('serviceWorker' in navigator) {
-  addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
+  addEventListener('load', () =>
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
+      .then((registration) => registration.update())
+      .catch((error) => console.warn('Filmbook offline cache update failed:', error))
+  );
 }
 </script>
 </body>

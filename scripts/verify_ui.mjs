@@ -1,9 +1,9 @@
 import { chromium } from "playwright";
-import { mkdirSync } from "fs";
+import { mkdirSync, readFileSync } from "fs";
 
 const OUT = "tmp_verify";
 mkdirSync(OUT, { recursive: true });
-const BASE = "http://localhost:8123/index.html?v=12";
+const BASE = "http://localhost:8123/index.html?v=13";
 
 async function shot(page, name) {
   await page.screenshot({ path: `${OUT}/${name}.png`, fullPage: false });
@@ -127,6 +127,88 @@ async function checkMobileReadability(page, { requireStory = true, requirePalett
   }
 }
 
+async function checkTextCollisions(page, label) {
+  const result = await page.evaluate(() => {
+    const intersects = (a, b) =>
+      Math.min(a.right, b.right) - Math.max(a.left, b.left) > 1 &&
+      Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > 1;
+    const groups = [...document.querySelectorAll(".sgroup")];
+    const collisions = [];
+    const overflow = [];
+    const clipped = [];
+
+    groups.forEach((group) => {
+      const rows = [...group.querySelectorAll(".srow")];
+      rows.forEach((row, i) => {
+        const children = [...row.children];
+        for (let a = 0; a < children.length; a += 1) {
+          for (let b = a + 1; b < children.length; b += 1) {
+            if (intersects(children[a].getBoundingClientRect(), children[b].getBoundingClientRect())) {
+              collisions.push(`${group.className}: row ${i} child overlap`);
+            }
+          }
+        }
+        if (row.scrollHeight > row.clientHeight + 1 || row.scrollWidth > row.clientWidth + 1) {
+          overflow.push(`${group.className}: row ${i}`);
+        }
+      });
+      for (let a = 0; a < rows.length; a += 1) {
+        for (let b = a + 1; b < rows.length; b += 1) {
+          if (intersects(rows[a].getBoundingClientRect(), rows[b].getBoundingClientRect())) {
+            collisions.push(`${group.className}: rows ${a}/${b}`);
+          }
+        }
+      }
+    });
+
+    const textElements = [...document.querySelectorAll(
+      ".dmeta h1, .sub, .filmline, .tip, .more, .palette-label, " +
+      ".sgroup h2, .srow .k, .srow .v, .srow .nv, .depth span, .depth b"
+    )].filter((el) => getComputedStyle(el).display !== "none");
+    const textRects = textElements.map((el) => ({ el, rect: el.getBoundingClientRect() }));
+    textRects.forEach(({ el, rect }, i) => {
+      const owner = el.closest(".dmeta, .sheet");
+      const bounds = owner?.getBoundingClientRect();
+      if (bounds && (rect.left < bounds.left - 1 || rect.right > bounds.right + 1 ||
+          rect.top < bounds.top - 1 || rect.bottom > bounds.bottom + 1)) {
+        clipped.push(`${el.className || el.tagName}: outside ${owner.className}`);
+      }
+      if (el.scrollHeight > el.clientHeight + 1 || el.scrollWidth > el.clientWidth + 1) {
+        overflow.push(`${el.className || el.tagName}: text overflow`);
+      }
+      for (let j = i + 1; j < textRects.length; j += 1) {
+        const other = textRects[j];
+        if (!el.contains(other.el) && !other.el.contains(el) && intersects(rect, other.rect)) {
+          collisions.push(
+            `${el.className || el.tagName} / ${other.el.className || other.el.tagName}`
+          );
+        }
+      }
+    });
+
+    const dbody = document.querySelector(".dbody");
+    const sheet = document.querySelector(".sheet");
+    const footer = document.querySelector(".dmetafoot");
+    const visible = (el) => {
+      if (!el) return false;
+      const r = el.getBoundingClientRect();
+      return r.top >= 0 && r.bottom <= innerHeight && r.height > 0;
+    };
+    return {
+      collisions,
+      overflow,
+      clipped,
+      bodyScrolls: dbody ? dbody.scrollHeight > dbody.clientHeight + 1 : true,
+      sheetScrolls: sheet ? sheet.scrollHeight > sheet.clientHeight + 1 : true,
+      footerVisible: visible(footer),
+    };
+  });
+  if (result.collisions.length || result.overflow.length || result.clipped.length ||
+      result.bodyScrolls || result.sheetScrolls || !result.footerVisible) {
+    throw new Error(`${label}: ${JSON.stringify(result)}`);
+  }
+}
+
 const browser = await chromium.launch({ headless: true });
 
 try {
@@ -224,6 +306,26 @@ try {
     await page.waitForSelector(".more a");
     const archiveHref = await page.locator(".more a").getAttribute("href");
     if (!/veresdenialex\.com/.test(archiveHref || "")) throw new Error("missing author archive fallback");
+    await page.close();
+  }
+
+  // Exact dimensions and theme from the user's real screenshot.
+  {
+    const recipes = JSON.parse(readFileSync("app/data.json", "utf8")).recipes;
+    const page = await browser.newPage({
+      viewport: { width: 529, height: 1024 },
+      isMobile: true,
+      hasTouch: true,
+      colorScheme: "dark",
+    });
+    for (const recipe of recipes) {
+      await page.goto(`${BASE}#/r/${recipe.id}`, { waitUntil: "networkidle" });
+      await page.waitForSelector(".sheet");
+      await checkTextCollisions(page, `529x1024 ${recipe.id}`);
+    }
+    await page.goto(`${BASE}#/r/kodak-gold`, { waitUntil: "networkidle" });
+    await shot(page, "mobile-real-kodak-gold");
+    console.log(`[529x1024 dark] checked ${recipes.length} recipes without text collisions`);
     await page.close();
   }
 
