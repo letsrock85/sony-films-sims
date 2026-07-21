@@ -368,6 +368,7 @@ button {
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: 14px;
   overflow: hidden;
+  align-items: stretch;
 }
 .dmeta {
   min-height: 0;
@@ -381,9 +382,10 @@ button {
 .dimgbtn {
   display: block;
   width: 100%;
-  max-height: 40%;
-  flex-shrink: 0;
-  min-height: 0;
+  height: auto;
+  min-height: 220px;
+  max-height: 58%;
+  flex: 1 1 320px;
   cursor: zoom-in;
   text-align: left;
 }
@@ -403,6 +405,22 @@ button {
   flex-shrink: 0;
 }
 .dswatch i { border: 1px solid var(--line-soft); }
+.palette {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.palette-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+  white-space: nowrap;
+}
 
 /* expanded photo: tap anywhere or Esc to dismiss */
 .lightbox {
@@ -473,20 +491,68 @@ button {
   text-underline-offset: 2px;
   text-decoration-thickness: 1.5px;
 }
+.dmetafoot {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: auto;
+}
+.dmetafoot .more { margin: 0; flex-shrink: 0; }
+.dmetafoot .palette {
+  grid-template-columns: 1fr;
+  gap: 3px;
+  width: min(230px, 58%);
+}
+.dmetafoot .palette-label {
+  white-space: normal;
+  line-height: 1.15;
+}
 
 .sheet {
   min-height: 0;
   overflow: hidden;
   border: 2px solid var(--line);
   padding: 10px 12px;
-  columns: 2;
-  column-gap: 18px;
   font-size: 12.5px;
   background: var(--paper);
 }
+.pp-sheet {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 12px 18px;
+}
+.pp-sheet .sg-white-balance { grid-column: 1; grid-row: 1; }
+.pp-sheet .sg-picture-profile { grid-column: 1; grid-row: 2; }
+.pp-sheet .sg-color-depth { grid-column: 2; grid-row: 1; }
+.pp-sheet .sg-detail { grid-column: 2; grid-row: 2; }
+.pp-sheet .sg-picture-profile,
+.pp-sheet .sg-detail {
+  display: grid;
+  grid-template-rows: auto repeat(7, minmax(0, 1fr));
+}
+.cl-sheet {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 12px;
+}
+.cl-sheet .sg-creative-look {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto repeat(5, minmax(0, 1fr));
+  column-gap: 18px;
+}
+.cl-sheet .sg-creative-look h2 {
+  grid-column: 1 / -1;
+}
+.cl-sheet .sg-creative-look .srow:last-child {
+  grid-column: 1 / -1;
+}
 .sgroup {
   break-inside: avoid;
-  margin-bottom: 14px;
+  margin: 0;
 }
 .sgroup h2 {
   margin: 0 0 6px;
@@ -659,40 +725,148 @@ button {
   .pvibe { -webkit-line-clamp: 1; font-size: 11px; }
   .dbody {
     grid-template-columns: 1fr;
-    grid-template-rows: auto minmax(0, 1fr);
-    gap: 6px;
+    grid-template-rows: minmax(0, 42%) minmax(0, 58%);
+    gap: 8px;
+    align-items: stretch;
   }
-  .dmeta { padding: 6px; gap: 4px; }
-  .dimgbtn { max-height: 96px; }
-  .dswatch { height: 12px; }
-  .dmeta h1 { font-size: 16px; }
-  .sub { font-size: 10px; }
-  .filmline {
-    font-size: 11.5px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+  .dmeta {
+    padding: 8px;
+    gap: 6px;
     overflow: hidden;
   }
-  .tip, .more { display: none; }
-  /* keep the full recipe on screen: two tight columns, nothing cut.
-     overflow:auto is a safety net only; normally everything fits */
-  .sheet {
-    columns: 2;
-    column-gap: 10px;
-    padding: 6px 8px;
-    font-size: 10.5px;
-    overflow: auto;
+  .dimgbtn {
+    height: auto;
+    min-height: 90px;
+    max-height: none;
+    flex: 1 1 110px;
   }
-  .sgroup { margin-bottom: 8px; }
-  .sgroup h2 { font-size: 9px; margin-bottom: 3px; }
-  .srow { padding: 2px 0; gap: 6px; }
-  .srow .k { font-size: 10px; }
-  .srow .v { font-size: 11px; }
-  .depth { gap: 2px; margin-top: 4px; }
-  .depth div { padding: 3px 0 2px; }
-  .depth span { font-size: 8px; }
-  .depth b { font-size: 11px; }
+  .dimgbtn img { object-position: center 25%; }
+  .dmetafoot {
+    align-items: end;
+    margin-top: 0;
+  }
+  .dmetafoot .palette {
+    width: min(210px, 62%);
+    gap: 3px;
+  }
+  .palette-label { font-size: 10.5px; }
+  .dswatch { height: 12px; }
+  .dmeta h1 { font-size: 18px; }
+  .sub { font-size: 11.5px; }
+  .filmline {
+    margin-top: 2px;
+    font-size: 12.5px;
+    line-height: 1.35;
+    max-width: none;
+  }
+  .tip {
+    display: block;
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+  .more {
+    display: block;
+    margin: 0;
+    font-size: 12px;
+  }
+  /* One vertical camera flow. Parameter pairs sit within each section,
+     so the eye never has to choose between competing columns. */
+  .sheet {
+    columns: auto;
+    padding: 8px 10px;
+    overflow: hidden;
+    align-self: stretch;
+    height: 100%;
+    font-size: 12px;
+  }
+  .pp-sheet {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1.05fr) auto minmax(0, 1fr);
+    gap: 7px;
+    align-items: stretch;
+  }
+  .pp-sheet .sgroup {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .cl-sheet {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+  .sheet .sgroup {
+    min-height: 0;
+    margin: 0;
+  }
+  .sheet .sgroup h2 {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .sheet .sg-picture-profile,
+  .sheet .sg-detail,
+  .sheet .sg-creative-look,
+  .sheet .sg-camera {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: minmax(0, 1fr);
+    column-gap: 16px;
+  }
+  .sheet .sg-picture-profile,
+  .sheet .sg-detail {
+    grid-template-rows: auto repeat(4, minmax(0, 1fr));
+  }
+  .sheet .sg-creative-look {
+    grid-template-rows: auto repeat(5, minmax(0, 1fr));
+  }
+  .sheet .sg-camera {
+    grid-template-rows: auto repeat(2, minmax(0, 1fr));
+  }
+  .sheet .sgroup h2 {
+    grid-column: 1 / -1;
+  }
+  .sheet .sg-picture-profile .srow:last-child,
+  .sheet .sg-detail .srow:last-child,
+  .sheet .sg-creative-look .srow:last-child {
+    grid-column: 1 / -1;
+  }
+  .sheet .sg-camera .srow {
+    grid-column: 1 / -1;
+  }
+  .sheet .srow {
+    min-height: 0;
+    padding: 2px 0;
+    gap: 1px;
+    border-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .sheet .srow .k {
+    min-width: 0;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+  .sheet .srow .v {
+    flex-shrink: 1;
+    font-size: 14px;
+    line-height: 1.15;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .sheet .sg-white-balance .srow,
+  .sheet .sg-camera .srow {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .depth { gap: 4px; margin-top: 4px; }
+  .depth div { padding: 4px 0 3px; }
+  .depth span { font-size: 12px; }
+  .depth b { font-size: 12px; }
   .zones { grid-template-columns: 1fr; }
   .zone { border-right: 0; }
   .crow { grid-template-columns: 1fr; gap: 2px; }

@@ -1,5 +1,5 @@
 /* Filmbook service worker — offline-first for the whole app */
-const VERSION = "filmbook-v10";
+const VERSION = "filmbook-v12";
 const CORE = [
   "./",
   "./index.html",

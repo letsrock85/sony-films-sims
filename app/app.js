@@ -176,8 +176,10 @@ function chipRow(group, title, defs) {
   </div>`;
 }
 
-const swatchStrip = (r, cls) => (r.swatches && r.swatches.length
-  ? `<span class="${cls}" aria-hidden="true">${r.swatches.map((c) =>
+const swatchStrip = (r, cls, accessibleLabel = "") => (r.swatches && r.swatches.length
+  ? `<span class="${cls}" ${accessibleLabel
+      ? `role="img" aria-label="${esc(accessibleLabel)}"`
+      : `aria-hidden="true"`}>${r.swatches.map((c) =>
       `<i style="background:${esc(c)}"></i>`).join("")}</span>`
   : "");
 
@@ -281,6 +283,28 @@ function clGroups(r) {
   ];
 }
 
+function fieldAdvice(r) {
+  const subjects = {
+    portrait: "portraits", travel: "travel", street: "street scenes",
+    documentary: "documentary work", landscape: "landscapes", nature: "nature",
+    everyday: "everyday shooting", architecture: "architecture", urban: "city scenes",
+  };
+  const lights = {
+    sunny: "hard sun", "golden-hour": "golden-hour light", overcast: "overcast light",
+    shade: "open shade", indoor: "indoor light", night: "night light", mixed: "mixed light",
+  };
+  const uses = [...new Set((r.tags?.bestFor || []).map((t) => subjects[t] || t))]
+    .slice(0, 3);
+  const conditions = [...new Set((r.tags?.light || [])
+    .filter((t) => t !== "any").map((t) => lights[t] || t))].slice(0, 2);
+  const useText = uses.length > 1
+    ? `${uses.slice(0, -1).join(", ")} and ${uses.at(-1)}`
+    : (uses[0] || "everyday shooting");
+  return conditions.length
+    ? `Best in ${conditions.join(" or ")} for ${useText}.`
+    : `A flexible choice for ${useText} across changing light.`;
+}
+
 function pageDetail(id) {
   const r = DB.recipes.find((x) => x.id === id);
   if (!r) { location.hash = "#/"; return; }
@@ -295,6 +319,10 @@ function pageDetail(id) {
   const isFav = favs().has(r.id);
   const used = [...new Set([...r.tags.bestFor, ...r.tags.light])]
     .filter((t) => t !== "any").slice(0, 4).join(", ");
+  const advice = r.tip || tips[0] || fieldAdvice(r);
+  const extraTips = r.tip ? tips.slice(0, 1) : tips.slice(advice === tips[0] ? 1 : 0, 1);
+  const sourceUrl = r.sourceUrl || "https://www.veresdenialex.com/sony-film-simulation-blog";
+  const sourceLabel = r.sourceUrl ? "Author's post" : "Author's archive";
 
   paint(`
   <article class="detail">
@@ -307,25 +335,30 @@ function pageDetail(id) {
         ${r.image ? `<button type="button" class="dimgbtn" id="dimg" aria-label="Expand sample photo">
           <img src="${esc(r.image)}" alt="${esc(r.name)}">
         </button>` : ""}
-        ${swatchStrip(r, "dswatch")}
         <h1>${esc(r.name)}</h1>
         <p class="sub">${r.kind === "cl" ? "Creative Look" : "Picture Profile"}${r.bw ? " · B&W" : ""}${used ? " · " + esc(used) : ""}</p>
         ${r.film ? `<p class="filmline">${esc(r.film)}</p>` : ""}
         ${warns.map((w) => `<p class="warn">${esc(w)}</p>`).join("")}
-        ${r.tip ? `<p class="tip">${esc(r.tip)}</p>` : ""}
-        ${tips.slice(0, 2).map((t) => `<p class="tip">${esc(t)}</p>`).join("")}
-        ${r.sourceUrl || links.length ? `
-        <p class="more">
-          ${r.sourceUrl ? `<a href="${esc(r.sourceUrl)}" target="_blank" rel="noopener">Author's post</a>` : ""}
-          ${links.map((l) => {
-            const url = (l.match(/https?:\S+/) || [""])[0];
-            return url ? ` · <a href="${esc(url)}" target="_blank" rel="noopener">Video</a>` : "";
-          }).join("")}
-        </p>` : ""}
+        <p class="tip fieldnote">${esc(advice)}</p>
+        ${extraTips.map((t) => `<p class="tip">${esc(t)}</p>`).join("")}
+        <div class="dmetafoot">
+          <p class="more">
+            <a href="${esc(sourceUrl)}" target="_blank" rel="noopener">${sourceLabel}</a>
+            ${links.map((l) => {
+              const url = (l.match(/https?:\S+/) || [""])[0];
+              return url ? ` · <a href="${esc(url)}" target="_blank" rel="noopener">Video</a>` : "";
+            }).join("")}
+          </p>
+          ${r.swatches && r.swatches.length ? `
+          <div class="palette">
+            <span class="palette-label">Source palette from PDF</span>
+            ${swatchStrip(r, "dswatch", `Source palette: ${r.swatches.join(", ")}`)}
+          </div>` : ""}
+        </div>
       </div>
-      <div class="sheet">
+      <div class="sheet ${r.kind === "cl" ? "cl-sheet" : "pp-sheet"}">
         ${groups.map((g) => `
-        <div class="sgroup">
+        <section class="sgroup sg-${g.title.toLowerCase().replace(/\s+/g, "-")}">
           <h2>${esc(g.title)}</h2>
           ${(g.rows || []).map(([k, v]) => k === "Note"
             ? `<div class="srow note"><span class="nv">${esc(v)}</span></div>`
@@ -336,7 +369,7 @@ function pageDetail(id) {
             ${["R", "G", "B", "C", "M", "Y"].map((ch) =>
               `<div><span>${ch}</span><b>${esc(g.depth[ch] ?? "0")}</b></div>`).join("")}
           </div>` : ""}
-        </div>`).join("")}
+        </section>`).join("")}
       </div>
     </div>
   </article>`);
