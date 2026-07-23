@@ -984,6 +984,32 @@ button {
     white-space: nowrap;
   }
   .sheet .srow .nv { font-size: 12px; line-height: 1.25; }
+  /* Picture Profile is always a predictable 2-column matrix.
+     Every cell has the same label-above-value hierarchy; content length
+     must never change the reading order or make a row jump full-width. */
+  .sheet .sg-picture-profile .srow,
+  .sheet .sg-picture-profile .srow.wide {
+    grid-column: auto;
+    min-width: 0;
+    min-height: 38px;
+    padding: clamp(3px, 0.55dvh, 7px) 0;
+    gap: 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .sheet .sg-picture-profile .srow .k {
+    color: var(--mute);
+  }
+  .sheet .sg-picture-profile .srow .v {
+    max-width: 100%;
+    font-size: 13.5px;
+    text-align: left;
+  }
+  .sheet .sg-picture-profile {
+    grid-template-rows: auto;
+    grid-auto-rows: minmax(38px, auto);
+  }
   .depth { gap: 4px; margin-top: 3px; }
   .depth div { padding: clamp(3px, 0.5dvh, 6px) 0 clamp(2px, 0.4dvh, 5px); }
   .depth span { font-size: 12px; }
@@ -1042,6 +1068,10 @@ button {
   .sheet .srow .v { font-size: 13px; }
   .dmetafoot .palette-label { font-size: 9.5px; }
   .dswatch { height: 10px; }
+}
+
+@media (max-width: 340px) {
+  .sheet .sg-picture-profile .srow .v { font-size: 12.5px; }
 }
 
 /* Below any sane phone height (landscape phones), scroll rather than clip. */
